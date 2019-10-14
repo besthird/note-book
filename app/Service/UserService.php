@@ -13,6 +13,8 @@ declare(strict_types=1);
 namespace App\Service;
 
 use App\Kernel\Oauth\WeChatFactory;
+use App\Service\Dao\UserDao;
+use App\Service\Instance\JwtInstance;
 use Hyperf\Di\Annotation\Inject;
 
 class UserService extends Service
@@ -22,6 +24,12 @@ class UserService extends Service
      * @var WeChatFactory
      */
     protected $factory;
+
+    /**
+     * @Inject
+     * @var UserDao
+     */
+    protected $dao;
 
     public function login(string $code)
     {
@@ -36,8 +44,12 @@ class UserService extends Service
 
         $session = $app->auth->session($code);
 
-        $decryptedData = $app->encryptor->decryptData($session['session_key'], $iv, $encrypted_data);
+        $userInfo = $app->encryptor->decryptData($session['session_key'], $iv, $encrypted_data);
 
-        return $decryptedData;
+        $user = $this->dao->create($userInfo);
+
+        $token = JwtInstance::instance()->encode($user);
+
+        return [$token, $user];
     }
 }

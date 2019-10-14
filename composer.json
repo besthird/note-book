@@ -19,6 +19,7 @@
         "ext-pdo_mysql": "*",
         "ext-redis": "*",
         "ext-swoole": ">=4.2",
+        "firebase/php-jwt": "^5.0",
         "hyperf/amqp": "dev-master",
         "hyperf/async-queue": "dev-master",
         "hyperf/cache": "dev-master",

@@ -14,6 +14,7 @@ namespace App\Controller;
 
 use App\Request\LoginRequest;
 use App\Request\RegistRequest;
+use App\Service\Formatter\UserFormatter;
 use App\Service\UserService;
 use Hyperf\Di\Annotation\Inject;
 
@@ -38,8 +39,11 @@ class UserController extends Controller
     {
         $input = $request->validated();
 
-        $result = $this->service->regist($input['code'], $input['encrypted_data'], $input['iv']);
+        [$token, $user] = $this->service->regist($input['code'], $input['encrypted_data'], $input['iv']);
 
-        return $this->response->success($result);
+        return $this->response->success([
+            'token' => $token,
+            'user' => UserFormatter::instance()->base($user),
+        ]);
     }
 }

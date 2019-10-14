@@ -52,6 +52,8 @@
                     iv: iv
                 })
 
+                console.log(err,data)
+
                 if (err == OK) {
                     console.log(data)
                 }
