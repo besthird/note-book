@@ -47,7 +47,8 @@
         "hyperf/process": "dev-master",
         "hyperf/redis": "dev-master",
         "hyperf/utils": "dev-master",
-        "hyperf/validation": "dev-master"
+        "hyperf/validation": "dev-master",
+        "overtrue/wechat": "^4.2"
     },
     "require-dev": {
         "swoft/swoole-ide-helper": "^4.2",
