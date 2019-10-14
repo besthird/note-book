@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a50a885a66428a40c705705d197b9555",
+    "content-hash": "9fc6dd0b99a5048be55858ba0c971a21",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -725,16 +725,16 @@
         },
         {
             "name": "hyperf/amqp",
-            "version": "v1.1.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf-cloud/amqp.git",
-                "reference": "c08948368ae074f51c6726f9d15d2b79c6ea4dc6"
+                "reference": "f3b652fce5880b1a4f7aea80f4815a2c0c9b3715"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hyperf-cloud/amqp/zipball/c08948368ae074f51c6726f9d15d2b79c6ea4dc6",
-                "reference": "c08948368ae074f51c6726f9d15d2b79c6ea4dc6",
+                "url": "https://api.github.com/repos/hyperf-cloud/amqp/zipball/f3b652fce5880b1a4f7aea80f4815a2c0c9b3715",
+                "reference": "f3b652fce5880b1a4f7aea80f4815a2c0c9b3715",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -792,11 +792,11 @@
                 "hyperf",
                 "php"
             ],
-            "time": "2019-10-07T08:18:29+00:00"
+            "time": "2019-10-13T03:53:24+00:00"
         },
         {
             "name": "hyperf/async-queue",
-            "version": "v1.1.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf-cloud/async-queue.git",
@@ -861,7 +861,7 @@
         },
         {
             "name": "hyperf/cache",
-            "version": "v1.1.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf-cloud/cache.git",
@@ -926,7 +926,7 @@
         },
         {
             "name": "hyperf/circuit-breaker",
-            "version": "v1.1.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf-cloud/circuit-breaker.git",
@@ -989,7 +989,7 @@
         },
         {
             "name": "hyperf/command",
-            "version": "v1.1.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf-cloud/command.git",
@@ -1046,7 +1046,7 @@
         },
         {
             "name": "hyperf/config",
-            "version": "v1.1.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf-cloud/config.git",
@@ -1120,7 +1120,7 @@
         },
         {
             "name": "hyperf/constants",
-            "version": "v1.1.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf-cloud/constants.git",
@@ -1177,16 +1177,16 @@
         },
         {
             "name": "hyperf/contract",
-            "version": "v1.1.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf-cloud/contract.git",
-                "reference": "7be4eea9b967d1bc96027a241025a65443603225"
+                "reference": "5d72212c0aab14915a856e083a7be901f5a1982c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hyperf-cloud/contract/zipball/7be4eea9b967d1bc96027a241025a65443603225",
-                "reference": "7be4eea9b967d1bc96027a241025a65443603225",
+                "url": "https://api.github.com/repos/hyperf-cloud/contract/zipball/5d72212c0aab14915a856e083a7be901f5a1982c",
+                "reference": "5d72212c0aab14915a856e083a7be901f5a1982c",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -1226,20 +1226,20 @@
                 "php",
                 "swoole"
             ],
-            "time": "2019-10-07T02:15:52+00:00"
+            "time": "2019-10-12T01:18:21+00:00"
         },
         {
             "name": "hyperf/database",
-            "version": "v1.1.1",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf-cloud/database.git",
-                "reference": "8f8f817d6d4647f84945a09001d7327a3b96ad87"
+                "reference": "8d4ee1439ab119724d2e2e7c11366e90e1de4759"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hyperf-cloud/database/zipball/8f8f817d6d4647f84945a09001d7327a3b96ad87",
-                "reference": "8f8f817d6d4647f84945a09001d7327a3b96ad87",
+                "url": "https://api.github.com/repos/hyperf-cloud/database/zipball/8d4ee1439ab119724d2e2e7c11366e90e1de4759",
+                "reference": "8d4ee1439ab119724d2e2e7c11366e90e1de4759",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -1287,11 +1287,11 @@
                 "hyperf",
                 "php"
             ],
-            "time": "2019-10-08T10:03:04+00:00"
+            "time": "2019-10-09T01:44:09+00:00"
         },
         {
             "name": "hyperf/db-connection",
-            "version": "v1.1.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf-cloud/db-connection.git",
@@ -1353,7 +1353,7 @@
         },
         {
             "name": "hyperf/devtool",
-            "version": "v1.1.1",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf-cloud/devtool.git",
@@ -1413,16 +1413,16 @@
         },
         {
             "name": "hyperf/di",
-            "version": "v1.1.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf-cloud/di.git",
-                "reference": "897dd63fc89a53b8903fb9b562a7e4258d9b51b9"
+                "reference": "329c3883350faf3005c11ed666b34ab43ff8f382"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hyperf-cloud/di/zipball/897dd63fc89a53b8903fb9b562a7e4258d9b51b9",
-                "reference": "897dd63fc89a53b8903fb9b562a7e4258d9b51b9",
+                "url": "https://api.github.com/repos/hyperf-cloud/di/zipball/329c3883350faf3005c11ed666b34ab43ff8f382",
+                "reference": "329c3883350faf3005c11ed666b34ab43ff8f382",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -1480,11 +1480,11 @@
                 "php",
                 "swoole"
             ],
-            "time": "2019-10-07T17:09:33+00:00"
+            "time": "2019-10-14T03:35:00+00:00"
         },
         {
             "name": "hyperf/dispatcher",
-            "version": "v1.1.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf-cloud/dispatcher.git",
@@ -1546,7 +1546,7 @@
         },
         {
             "name": "hyperf/elasticsearch",
-            "version": "v1.1.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf-cloud/elasticsearch.git",
@@ -1599,7 +1599,7 @@
         },
         {
             "name": "hyperf/event",
-            "version": "v1.1.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf-cloud/event.git",
@@ -1661,7 +1661,7 @@
         },
         {
             "name": "hyperf/exception-handler",
-            "version": "v1.1.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf-cloud/exception-handler.git",
@@ -1721,7 +1721,7 @@
         },
         {
             "name": "hyperf/framework",
-            "version": "v1.1.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf-cloud/framework.git",
@@ -1792,7 +1792,7 @@
         },
         {
             "name": "hyperf/guzzle",
-            "version": "v1.1.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf-cloud/guzzle.git",
@@ -1850,16 +1850,16 @@
         },
         {
             "name": "hyperf/http-message",
-            "version": "v1.1.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf-cloud/http-message.git",
-                "reference": "4bccad186f2755957b14b32ebddade8c3fb2cd35"
+                "reference": "eae52a20e1426a8833a25b76a14b0712e9c71bca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hyperf-cloud/http-message/zipball/4bccad186f2755957b14b32ebddade8c3fb2cd35",
-                "reference": "4bccad186f2755957b14b32ebddade8c3fb2cd35",
+                "url": "https://api.github.com/repos/hyperf-cloud/http-message/zipball/eae52a20e1426a8833a25b76a14b0712e9c71bca",
+                "reference": "eae52a20e1426a8833a25b76a14b0712e9c71bca",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -1899,20 +1899,20 @@
                 "php",
                 "swoole"
             ],
-            "time": "2019-10-07T02:15:52+00:00"
+            "time": "2019-10-11T06:39:17+00:00"
         },
         {
             "name": "hyperf/http-server",
-            "version": "v1.1.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf-cloud/http-server.git",
-                "reference": "81fae03b4cc26ef98c67c88977d7795d0dd65210"
+                "reference": "b7ff40fb12a9efef8737551988e03a935b940d4b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hyperf-cloud/http-server/zipball/81fae03b4cc26ef98c67c88977d7795d0dd65210",
-                "reference": "81fae03b4cc26ef98c67c88977d7795d0dd65210",
+                "url": "https://api.github.com/repos/hyperf-cloud/http-server/zipball/b7ff40fb12a9efef8737551988e03a935b940d4b",
+                "reference": "b7ff40fb12a9efef8737551988e03a935b940d4b",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -1969,11 +1969,11 @@
                 "php",
                 "swoole"
             ],
-            "time": "2019-10-07T02:15:52+00:00"
+            "time": "2019-10-11T06:39:17+00:00"
         },
         {
             "name": "hyperf/logger",
-            "version": "v1.1.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf-cloud/logger.git",
@@ -2033,7 +2033,7 @@
         },
         {
             "name": "hyperf/memory",
-            "version": "v1.1.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf-cloud/memory.git",
@@ -2089,7 +2089,7 @@
         },
         {
             "name": "hyperf/model-cache",
-            "version": "v1.1.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf-cloud/model-cache.git",
@@ -2216,7 +2216,7 @@
         },
         {
             "name": "hyperf/paginator",
-            "version": "v1.1.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf-cloud/paginator.git",
@@ -2281,7 +2281,7 @@
         },
         {
             "name": "hyperf/pool",
-            "version": "v1.1.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf-cloud/pool.git",
@@ -2340,16 +2340,16 @@
         },
         {
             "name": "hyperf/process",
-            "version": "v1.1.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf-cloud/process.git",
-                "reference": "ac2370b108f25bcd0b4ed5ae8c56376e5836bdf7"
+                "reference": "f8daece7b292cc8b16d9d05f6feb6322c6a1d002"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hyperf-cloud/process/zipball/ac2370b108f25bcd0b4ed5ae8c56376e5836bdf7",
-                "reference": "ac2370b108f25bcd0b4ed5ae8c56376e5836bdf7",
+                "url": "https://api.github.com/repos/hyperf-cloud/process/zipball/f8daece7b292cc8b16d9d05f6feb6322c6a1d002",
+                "reference": "f8daece7b292cc8b16d9d05f6feb6322c6a1d002",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -2401,11 +2401,11 @@
                 "php",
                 "process"
             ],
-            "time": "2019-10-07T02:15:52+00:00"
+            "time": "2019-10-11T06:26:09+00:00"
         },
         {
             "name": "hyperf/redis",
-            "version": "v1.1.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf-cloud/redis.git",
@@ -2535,7 +2535,7 @@
         },
         {
             "name": "hyperf/utils",
-            "version": "v1.1.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf-cloud/utils.git",
@@ -5010,7 +5010,7 @@
         },
         {
             "name": "hyperf/testing",
-            "version": "v1.1.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf-cloud/testing.git",
@@ -8374,7 +8374,37 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "hyperf/amqp": 20,
+        "hyperf/async-queue": 20,
+        "hyperf/cache": 20,
+        "hyperf/circuit-breaker": 20,
+        "hyperf/command": 20,
+        "hyperf/config": 20,
+        "hyperf/constants": 20,
+        "hyperf/contract": 20,
+        "hyperf/database": 20,
+        "hyperf/db-connection": 20,
+        "hyperf/devtool": 20,
+        "hyperf/di": 20,
+        "hyperf/dispatcher": 20,
+        "hyperf/elasticsearch": 20,
+        "hyperf/event": 20,
+        "hyperf/exception-handler": 20,
+        "hyperf/framework": 20,
+        "hyperf/guzzle": 20,
+        "hyperf/http-message": 20,
+        "hyperf/http-server": 20,
+        "hyperf/logger": 20,
+        "hyperf/memory": 20,
+        "hyperf/model-cache": 20,
+        "hyperf/paginator": 20,
+        "hyperf/pool": 20,
+        "hyperf/process": 20,
+        "hyperf/redis": 20,
+        "hyperf/utils": 20,
+        "hyperf/testing": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

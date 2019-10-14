@@ -37,6 +37,7 @@
         "hyperf/exception-handler": "dev-master",
         "hyperf/framework": "dev-master",
         "hyperf/guzzle": "dev-master",
+        "hyperf/http-message": "dev-master",
         "hyperf/http-server": "dev-master",
         "hyperf/logger": "dev-master",
         "hyperf/memory": "dev-master",
