@@ -55,6 +55,7 @@ wepy.app({
 <config>
 {
     pages: [
+      'pages/note',
       'pages/index'
     ],
     window: {

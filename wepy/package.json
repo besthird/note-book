@@ -17,7 +17,8 @@
   "license": "MIT",
   "dependencies": {
     "@wepy/core": "^2.0.0-alpha.9",
-    "miniprogram-slide-view": "0.0.3"
+    "miniprogram-slide-view": "0.0.3",
+    "weui-wxss": "^2.0.0"
   },
   "devDependencies": {
     "@wepy/cli": "^2.0.0-alpha.20",
