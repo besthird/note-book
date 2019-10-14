@@ -3,12 +3,14 @@
         <image class="logo" src="/static/logo.png"></image>
         <view>
             <text class="title">{{title}}</text>
+            <button open-type="getUserInfo" lang="zh_CN" @getuserinfo="login" withCredentials="true">登录</button>
         </view>
     </view>
 </template>
 
 <script>
     import request from "../../request/request";
+    import { OK } from "../../config/constatns";
 
     export default {
         data() {
@@ -16,20 +18,45 @@
                 title: 'Hello'
             }
         },
+
         async onLoad() {
             var [, res] = await uni.login({
                 provider: 'weixin'
             });
 
-            var [code, data] = await request.request('POST', '/login', {
-                code: res.code
+            var code = res.code;
+
+            var [err, data] = await request.request('POST', '/login', {
+                code: code
             })
 
-            if (code == 0) {
+            if (err == 0) {
                 console.log(data)
             }
         },
-        methods: {}
+
+        methods: {
+            async login(res) {
+                var encryptedData = res.detail.encryptedData
+                var iv = res.detail.iv;
+
+                var [, res] = await uni.login({
+                    provider: 'weixin'
+                });
+
+                var code = res.code;
+
+                var [err, data] = await request.request('POST', '/regist', {
+                    code: code,
+                    encrypted_data: encryptedData,
+                    iv: iv
+                })
+
+                if (err == OK) {
+                    console.log(data)
+                }
+            },
+        }
     }
 </script>
 

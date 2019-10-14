@@ -14,3 +14,4 @@ use Hyperf\HttpServer\Router\Router;
 
 Router::addRoute(['GET', 'POST', 'HEAD'], '/', 'App\Controller\IndexController@index');
 Router::post('/login', 'App\Controller\UserController@login');
+Router::post('/regist', 'App\Controller\UserController@regist');

@@ -13,13 +13,33 @@ declare(strict_types=1);
 namespace App\Controller;
 
 use App\Request\LoginRequest;
+use App\Request\RegistRequest;
+use App\Service\UserService;
+use Hyperf\Di\Annotation\Inject;
 
 class UserController extends Controller
 {
+    /**
+     * @Inject
+     * @var UserService
+     */
+    protected $service;
+
     public function login(LoginRequest $request)
     {
         $input = $request->validated();
 
-        return $this->response->success($input);
+        $result = $this->service->login($input['code']);
+
+        return $this->response->success($result);
+    }
+
+    public function regist(RegistRequest $request)
+    {
+        $input = $request->validated();
+
+        $result = $this->service->regist($input['code'], $input['encrypted_data'], $input['iv']);
+
+        return $this->response->success($result);
     }
 }
