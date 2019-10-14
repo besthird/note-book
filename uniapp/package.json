@@ -36,7 +36,8 @@
     "flyio": "^0.6.2",
     "regenerator-runtime": "^0.12.1",
     "vue": "^2.6.10",
-    "vuex": "^3.0.1"
+    "vuex": "^3.0.1",
+    "weui-wxss": "^2.0.0"
   },
   "devDependencies": {
     "@dcloudio/uni-cli-shared": "^2.0.0-23320190923002",
