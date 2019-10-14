@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9fc6dd0b99a5048be55858ba0c971a21",
+    "content-hash": "fb9f454936857a18d6e2fd8081f7c55e",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -282,6 +282,70 @@
                 "php"
             ],
             "time": "2019-07-30T19:33:28+00:00"
+        },
+        {
+            "name": "egulias/email-validator",
+            "version": "2.1.11",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/egulias/EmailValidator.git",
+                "reference": "92dd169c32f6f55ba570c309d83f5209cefb5e23"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/92dd169c32f6f55ba570c309d83f5209cefb5e23",
+                "reference": "92dd169c32f6f55ba570c309d83f5209cefb5e23",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "doctrine/lexer": "^1.0.1",
+                "php": ">= 5.5"
+            },
+            "require-dev": {
+                "dominicsayers/isemail": "dev-master",
+                "phpunit/phpunit": "^4.8.35||^5.7||^6.0",
+                "satooshi/php-coveralls": "^1.0.1",
+                "symfony/phpunit-bridge": "^4.4@dev"
+            },
+            "suggest": {
+                "ext-intl": "PHP Internationalization Libraries are required to use the SpoofChecking validation"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Egulias\\EmailValidator\\": "EmailValidator"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Eduardo Gulias Davis"
+                }
+            ],
+            "description": "A library for validating emails against several RFCs",
+            "homepage": "https://github.com/egulias/EmailValidator",
+            "keywords": [
+                "email",
+                "emailvalidation",
+                "emailvalidator",
+                "validation",
+                "validator"
+            ],
+            "time": "2019-08-13T17:33:27+00:00"
         },
         {
             "name": "elasticsearch/elasticsearch",
@@ -2534,6 +2598,65 @@
             "time": "2019-10-07T08:35:53+00:00"
         },
         {
+            "name": "hyperf/translation",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hyperf-cloud/translation.git",
+                "reference": "892f81a7e0a1022b8edb20a07e7f7061971f9f6f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hyperf-cloud/translation/zipball/892f81a7e0a1022b8edb20a07e7f7061971f9f6f",
+                "reference": "892f81a7e0a1022b8edb20a07e7f7061971f9f6f",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "hyperf/contract": "~1.1.0",
+                "hyperf/utils": "~1.1.0",
+                "php": ">=7.2",
+                "psr/container": "^1.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.14",
+                "mockery/mockery": "^1.2",
+                "phpstan/phpstan": "^0.10.5"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1-dev"
+                },
+                "hyperf": {
+                    "config": "Hyperf\\Translation\\ConfigProvider"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/Functions.php"
+                ],
+                "psr-4": {
+                    "Hyperf\\Translation\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "An independent translation component, forked by illuminate/translation.",
+            "keywords": [
+                "hyperf",
+                "translation"
+            ],
+            "time": "2019-10-07T02:15:52+00:00"
+        },
+        {
             "name": "hyperf/utils",
             "version": "dev-master",
             "source": {
@@ -2603,6 +2726,77 @@
                 "utils"
             ],
             "time": "2019-10-07T02:15:52+00:00"
+        },
+        {
+            "name": "hyperf/validation",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hyperf-cloud/validation.git",
+                "reference": "49a55d812e5b90550f499e7340eee6f16293a04c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hyperf-cloud/validation/zipball/49a55d812e5b90550f499e7340eee6f16293a04c",
+                "reference": "49a55d812e5b90550f499e7340eee6f16293a04c",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "egulias/email-validator": "^2.1",
+                "ext-swoole": ">=4.3",
+                "hyperf/command": "~1.1.0",
+                "hyperf/contract": "~1.1.0",
+                "hyperf/database": "~1.1.0",
+                "hyperf/devtool": "~1.1.0",
+                "hyperf/di": "~1.1.0",
+                "hyperf/framework": "~1.1.0",
+                "hyperf/http-server": "~1.1.0",
+                "hyperf/translation": "~1.1.0",
+                "hyperf/utils": "~1.1.0",
+                "nesbot/carbon": "^2.21",
+                "php": ">=7.2",
+                "psr/container": "^1.0",
+                "psr/event-dispatcher": "^1.0",
+                "psr/http-message": "^1.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.14",
+                "hyperf/db-connection": "^1.0",
+                "hyperf/testing": "1.0.*",
+                "mockery/mockery": "^1.2",
+                "phpstan/phpstan": "^0.10.5",
+                "swoft/swoole-ide-helper": "^4.4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1-dev"
+                },
+                "hyperf": {
+                    "config": "Hyperf\\Validation\\ConfigProvider"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Hyperf\\Validation\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "hyperf validation",
+            "keywords": [
+                "hyperf",
+                "validation"
+            ],
+            "time": "2019-10-12T02:18:09+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -8403,6 +8597,7 @@
         "hyperf/process": 20,
         "hyperf/redis": 20,
         "hyperf/utils": 20,
+        "hyperf/validation": 20,
         "hyperf/testing": 20
     },
     "prefer-stable": true,
