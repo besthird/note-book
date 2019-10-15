@@ -14,5 +14,14 @@ export default {
         }
 
         return [err, data];
+    },
+
+    async search(offset, limit) {
+        let [err, data] = await request.request('GET', '/note', {
+            offset: offset,
+            limit: limit
+        });
+
+        return [err, data];
     }
 }

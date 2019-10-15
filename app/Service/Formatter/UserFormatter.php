@@ -22,6 +22,7 @@ class UserFormatter extends Formatter
             'id' => $model->id,
             'nickname' => $model->nickname,
             'gender' => $model->gender,
+            'avatar' => $model->avatar,
         ];
     }
 }

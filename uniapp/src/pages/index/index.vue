@@ -1,12 +1,15 @@
 <template>
     <view class="content">
         <view class="uni-padding-wrap uni-common-mt">
-            <view>
-                <scroll-view scroll-y="true" class="scroll-Y" @scrolltoupper="upper" @scrolltolower="lower"
-                             @scroll="scroll">
-                    <view id="demo1" class="scroll-view-item">A</view>
-                </scroll-view>
-            </view>
+            <scroll-view scroll-y="true" class="scroll-Y" @scrolltoupper="upper" @scrolltolower="lower"
+                         enable-back-to-top="true">
+                <view v-for="item in items">
+                    <uni-card :title="item.user.nickname" :thumbnail="item.user.avatar"
+                              :extra="item.user.gender==1?'男':'女'">
+                        {{item.text}}
+                    </uni-card>
+                </view>
+            </scroll-view>
         </view>
 
         <uni-fab ref="fab"
@@ -53,6 +56,11 @@
         data() {
             return {
                 isLogin: true,
+                limit: 10,
+                offset: 0,
+                items: [],
+                show: 'hide',
+                refreshtext: '下拉可以刷新',
                 // 以下为 uniFab 配置
                 horizontal: 'right',
                 vertical: 'bottom',
@@ -80,11 +88,11 @@
         },
 
         async onShow() {
+            this.search()
         },
 
         methods: {
             async trigger(e) {
-                console.log(e);
                 this.$refs.fab.close();
 
                 switch (e.index) {
@@ -93,6 +101,26 @@
                         break;
                 }
             },
+            async upper(e) {
+                console.log(e)
+            },
+            async lower(e) {
+                console.log(e)
+            },
+            async search(e) {
+                let [err, data] = await note.search(this.offset, this.limit);
+                this.items = [...this.items, ...data];
+            },
+            async refresh(e) {
+                this.show = 'show'
+                this.refreshtext = '刷新中'
+
+                let [err, data] = await note.search(this.offset, this.limit);
+                this.items = data;
+
+                this.show = 'hide'
+                this.refreshtext = '下拉可以刷新'
+            },
             async submit(e) {
                 let formId = e.detail.formId;
                 let value = e.detail.value;
@@ -100,6 +128,7 @@
                 this.$refs.popup.close();
 
                 await note.save(value.text, 0);
+                await this.refresh();
             },
             async regist(res) {
                 var encryptedData = res.detail.encryptedData
