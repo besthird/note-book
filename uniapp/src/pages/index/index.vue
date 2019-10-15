@@ -10,7 +10,7 @@
 
 <script>
     import request from "../../request/request";
-    import { OK } from "../../config/constatns";
+    import { OK, CANCEL } from "../../config/constatns";
 
     export default {
         data() {

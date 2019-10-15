@@ -59,7 +59,10 @@ export default {
             code: res.code
         })
 
-        if (err !== 0) {
+        if (err == OK) {
+            var app = getApp();
+            app.globalData.token = data.token;
+            app.globalData.user = data.user;
         }
 
         return data;
