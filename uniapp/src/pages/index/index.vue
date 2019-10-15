@@ -153,6 +153,7 @@
                     var app = getApp();
                     app.globalData.token = data.token;
                     app.globalData.user = data.user;
+                    this.isLogin = core.isLogin();
                 }
             },
         }
