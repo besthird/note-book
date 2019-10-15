@@ -1,9 +1,10 @@
 import { OK, FAILED, TOKEN_INVALID, USER_NOT_REGIST } from '../config/constatns'
+import { BASE_URI } from '../config/env'
 
 export default {
     async request(method, url, data) {
         let that = this;
-        let baseUri = 'http://127.0.0.1:9501';
+        let baseUri = BASE_URI;
         let app = getApp();
         let token = '';
         if (app.globalData.token) {
