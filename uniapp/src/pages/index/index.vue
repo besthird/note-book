@@ -3,7 +3,7 @@
         <view v-for="item in items">
             <uni-card :title="item.user.nickname" :thumbnail="item.user.avatar"
                       :extra="item.user.gender==1?'男':'女'">
-                {{item.text}}
+                <rich-text :nodes="item.text"></rich-text>
             </uni-card>
             <view style="height:10px"></view>
         </view>
@@ -46,6 +46,7 @@
     import uniFab from '@dcloudio/uni-ui/lib/uni-fab/uni-fab.vue'
     import core from "../../core/core";
     import note from '../../core/note';
+    import marked from 'marked'
 
     export default {
         components: { uniPopup, uniCard, uniFab },
@@ -113,6 +114,11 @@
                 if (data.length == 0) {
                     this.end = true;
                 } else {
+                    data = data.map(function (item) {
+                        item.text = marked(item.text);
+                        return item;
+                    });
+
                     this.offset += this.limit;
                     this.items = [...this.items, ...data];
                 }
@@ -121,6 +127,11 @@
                 this.offset = 0;
 
                 let [err, data] = await note.search(this.offset, this.limit);
+                data = data.map(function (item) {
+                    item.text = marked(item.text);
+                    return item;
+                });
+
                 this.offset += this.limit;
                 this.items = data;
                 this.end = false;
