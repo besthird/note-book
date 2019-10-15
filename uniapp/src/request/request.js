@@ -1,9 +1,12 @@
+import { OK, FAILED } from '../config/constatns'
+
 export default {
     async request(method, url, data) {
+        let that = this;
         let baseUri = 'http://127.0.0.1:9501';
         let app = getApp();
         let token = '';
-        if(app.globalData.token){
+        if (app.globalData.token) {
             token = app.globalData.token;
         }
 
@@ -14,17 +17,36 @@ export default {
             header: {
                 'X-Token': token
             }
-        }).then(data => {
-            var [error, res] = data;
-            if (res.statusCode !== 200) {
-                return [100];
+        }).then(res => {
+            var [err, res] = res;
+            if (err !== null) {
+                return that.attempts({ title: '网络连接失败' }, method, url, data);
             }
 
-            if (res.data.code !== 0) {
+            if (res.statusCode !== 200) {
+                return that.attempts({ title: '网络连接失败' }, method, url, data);
+            }
+
+            if (res.data.code !== OK) {
+                uni.showModal({
+                    title: '提示',
+                    content: res.data.message
+                });
                 return [res.data.code, res.data.message];
             }
 
-            return [0, res.data.data];
+            return [OK, res.data.data];
+        });
+    },
+
+    async attempts(model, method, url, data) {
+        let that = this;
+        return uni.showModal(model).then(res => {
+            var [, res] = res;
+            if (res.confirm) {
+                return that.request(method, url, data);
+            }
+            return [CANCEL];
         });
     },
 
@@ -33,15 +55,13 @@ export default {
             provider: 'weixin'
         });
 
-        var code = res.code;
-
         var [err, data] = await this.request('POST', '/login', {
-            code: code
+            code: res.code
         })
 
-        return [err,data];
-        if (err == 0) {
-            console.log(data)
+        if (err !== 0) {
         }
+
+        return data;
     },
 }
