@@ -21,4 +21,4 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw*
-src/config/env.prod.js
+env.prod.js
