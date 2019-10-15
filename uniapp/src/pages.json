@@ -6,7 +6,8 @@
             "style": {
                 "navigationBarTitleText": "uni-app",
                 "enablePullDownRefresh": true,
-                "onReachBottomDistance": 50
+                "onReachBottomDistance": 50,
+                "navigationBarTitleText": "NoteBook"
             }
         }
     ],
