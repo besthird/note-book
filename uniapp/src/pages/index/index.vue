@@ -5,6 +5,7 @@
                       :extra="item.user.gender==1?'男':'女'">
                 {{item.text}}
             </uni-card>
+            <view style="height:10px"></view>
         </view>
 
         <uni-fab ref="fab"
