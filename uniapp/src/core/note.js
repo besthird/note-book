@@ -7,6 +7,12 @@ export default {
             text: text
         });
 
-        console.log(data)
+        if (err === OK) {
+            uni.showModal({
+                title: "发布成功"
+            });
+        }
+
+        return [err, data];
     }
 }

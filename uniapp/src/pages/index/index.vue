@@ -99,7 +99,7 @@
 
                 this.$refs.popup.close();
 
-                let res = await note.save(value.text, 0);
+                await note.save(value.text, 0);
             },
             async regist(res) {
                 var encryptedData = res.detail.encryptedData
