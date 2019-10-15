@@ -46,6 +46,7 @@
     import uniCard from "@dcloudio/uni-ui/lib/uni-card/uni-card"
     import uniFab from '@dcloudio/uni-ui/lib/uni-fab/uni-fab.vue'
     import core from "../../core/core";
+    import note from '../../core/note';
 
     export default {
         components: { uniPopup, uniCard, uniFab },
@@ -97,6 +98,8 @@
                 let value = e.detail.value;
 
                 this.$refs.popup.close();
+
+                let res = await note.save(value.text, 0);
             },
             async regist(res) {
                 var encryptedData = res.detail.encryptedData

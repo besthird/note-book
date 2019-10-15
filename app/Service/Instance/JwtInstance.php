@@ -46,7 +46,7 @@ class JwtInstance
     public function decode(string $token): self
     {
         try {
-            $decoded = JWT::decode($token, self::KEY, ['HS256']);
+            $decoded = (array) JWT::decode($token, self::KEY, ['HS256']);
         } catch (\Throwable $exception) {
             return $this;
         }
