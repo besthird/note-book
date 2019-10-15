@@ -12,6 +12,7 @@ declare(strict_types=1);
 
 namespace App\Middleware;
 
+use App\Service\Instance\JwtInstance;
 use Hyperf\HttpServer\Contract\RequestInterface;
 use Hyperf\HttpServer\Request;
 use Hyperf\Logger\LoggerFactory;
@@ -39,10 +40,13 @@ class DebugMiddleware implements MiddlewareInterface
         $request = $container->get(RequestInterface::class);
         $result = $response->getBody()->getContents();
 
+        $jwt = JwtInstance::instance();
+
         // 日志
         $time = microtime(true) - $time;
         $debug = 'URL: ' . $request->getUri() . PHP_EOL;
         $debug .= 'TIME: ' . $time . PHP_EOL;
+        $debug .= 'USER_ID:' . $jwt->getId() . PHP_EOL;
         $debug .= 'PARAMS: ' . $request->getBody()->getContents() . PHP_EOL;
         $debug .= 'RESPONSE: ' . $result . PHP_EOL;
 

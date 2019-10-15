@@ -26,7 +26,22 @@ class ErrorCode extends AbstractConstants
     const SERVER_ERROR = 500;
 
     /**
+     * @Message("Token已失效")
+     */
+    const TOKEN_INVALID = 700;
+
+    /**
+     * @Message("用户没有注册")
+     */
+    const USER_NOT_REGIST = 701;
+
+    /**
      * @Message("参数错误")
      */
     const PARAMS_INVALID = 1000;
+
+    /**
+     * @Message("用户不存在")
+     */
+    const USER_NOT_EXIST = 1001;
 }

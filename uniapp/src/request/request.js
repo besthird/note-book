@@ -1,12 +1,18 @@
 export default {
     async request(method, url, data) {
-        let baseUri = 'http://127.0.0.1:9501'
+        let baseUri = 'http://127.0.0.1:9501';
+        let app = getApp();
+        let token = '';
+        if(app.globalData.token){
+            token = app.globalData.token;
+        }
+
         return uni.request({
             url: baseUri + url,
             method: method,
             data: data,
             header: {
-                'custom-header': 'hello' // 自定义请求头信息
+                'X-Token': token
             }
         }).then(data => {
             var [error, res] = data;

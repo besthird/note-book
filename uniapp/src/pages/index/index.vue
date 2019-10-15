@@ -52,10 +52,10 @@
                     iv: iv
                 })
 
-                console.log(err,data)
-
                 if (err == OK) {
-                    console.log(data)
+                    var app = getApp();
+                    app.globalData.token = data.token;
+                    app.globalData.user = data.user;
                 }
             },
         }
