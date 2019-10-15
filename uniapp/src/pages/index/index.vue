@@ -1,51 +1,105 @@
 <template>
     <view class="content">
-        <image class="logo" src="/static/logo.png"></image>
-        <view>
-            <text class="title">{{title}}</text>
-
-            <button v-if="!isLogin" open-type="getUserInfo" lang="zh_CN" @getuserinfo="regist" withCredentials="true">登录
-            </button>
-            <button v-else lang="zh_CN" @click="popup">发布信息</button>
-            <uni-popup ref="popup" type="bottom">
-                <view class="uni-textarea">
-                    <textarea @blur="bindTextAreaBlur" auto-height />
-                </view>
-                <view class="uni-title uni-common-pl">占位符字体是红色的textarea</view>
-                <view class="uni-textarea">
-                    <textarea placeholder-style="color:#F76260" placeholder="占位符字体是红色的"/>
-                </view>
-            </uni-popup>
+        <view class="uni-padding-wrap uni-common-mt">
+            <view>
+                <scroll-view scroll-y="true" class="scroll-Y" @scrolltoupper="upper" @scrolltolower="lower"
+                             @scroll="scroll">
+                    <view id="demo1" class="scroll-view-item">A</view>
+                </scroll-view>
+            </view>
         </view>
+
+        <uni-fab ref="fab"
+                 :pattern="pattern"
+                 :content="content"
+                 :horizontal="horizontal"
+                 :vertical="vertical"
+                 :direction="direction"
+                 :show="false"
+                 @trigger="trigger"
+        ></uni-fab>
+
+        <uni-popup ref="popup" type="bottom">
+            <button v-if="!isLogin" open-type="getUserInfo" @getuserinfo="regist"
+                    withCredentials="true">login
+            </button>
+            <form v-else @submit="submit" report-submit="true">
+                <view class="uni-title uni-common-pl">发布信息</view>
+                <view class="uni-textarea">
+                    <textarea name="text" show-confirm-bar="true" @submit="submit"/>
+                </view>
+                <view class="uni-btn-v">
+                    <button form-type="reset" size="mini">Reset</button>
+                    <button form-type="submit" size="mini">Submit</button>
+                </view>
+            </form>
+        </uni-popup>
     </view>
+
+
 </template>
 
 <script>
     import request from "../../core/request";
     import { OK, CANCEL } from "../../config/constatns";
     import uniPopup from "@dcloudio/uni-ui/lib/uni-popup/uni-popup.vue"
+    import uniCard from "@dcloudio/uni-ui/lib/uni-card/uni-card"
+    import uniFab from '@dcloudio/uni-ui/lib/uni-fab/uni-fab.vue'
     import core from "../../core/core";
 
     export default {
-        components: { uniPopup },
+        components: { uniPopup, uniCard, uniFab },
         data() {
             return {
-                title: 'Hello',
                 isLogin: true,
+                // 以下为 uniFab 配置
+                horizontal: 'right',
+                vertical: 'bottom',
+                direction: 'horizontal',
+                pattern: {
+                    color: '#7A7E83',
+                    backgroundColor: '#fff',
+                    selectedColor: '#007AFF',
+                    buttonColor: "#007AFF"
+                },
+                content: [
+                    {
+                        iconPath: '/static/edit_line.png',
+                        selectedIconPath: '/static/edit_line.png',
+                        text: '发布',
+                        active: false
+                    }
+                ]
             }
         },
 
         async onLoad() {
-        },
-
-        async onShow() {
             await request.login();
             this.isLogin = core.isLogin();
         },
 
+        async onShow() {
+        },
+
         methods: {
+            async trigger(e) {
+                console.log(e);
+                this.$refs.fab.close();
+
+                switch (e.index) {
+                    case 0:
+                        await this.popup();
+                        break;
+                }
+            },
             async popup() {
-                this.$refs.popup.open()
+                this.$refs.popup.open();
+            },
+            async submit(e) {
+                let formId = e.detail.formId;
+                let value = e.detail.value;
+
+                this.$refs.popup.close();
             },
             async regist(res) {
                 var encryptedData = res.detail.encryptedData
