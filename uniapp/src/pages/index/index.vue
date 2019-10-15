@@ -3,7 +3,7 @@
         <image class="logo" src="/static/logo.png"></image>
         <view>
             <text class="title">{{title}}</text>
-            <button open-type="getUserInfo" lang="zh_CN" @getuserinfo="login" withCredentials="true">登录</button>
+            <button open-type="getUserInfo" lang="zh_CN" @getuserinfo="regist" withCredentials="true">登录</button>
         </view>
     </view>
 </template>
@@ -20,23 +20,13 @@
         },
 
         async onLoad() {
-            var [, res] = await uni.login({
-                provider: 'weixin'
-            });
+            var res = await request.login();
 
-            var code = res.code;
-
-            var [err, data] = await request.request('POST', '/login', {
-                code: code
-            })
-
-            if (err == 0) {
-                console.log(data)
-            }
+            console.log(res)
         },
 
         methods: {
-            async login(res) {
+            async regist(res) {
                 var encryptedData = res.detail.encryptedData
                 var iv = res.detail.iv;
 

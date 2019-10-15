@@ -26,5 +26,22 @@ export default {
 
             return [0, res.data.data];
         });
-    }
+    },
+
+    async login() {
+        var [, res] = await uni.login({
+            provider: 'weixin'
+        });
+
+        var code = res.code;
+
+        var [err, data] = await this.request('POST', '/login', {
+            code: code
+        })
+
+        return [err,data];
+        if (err == 0) {
+            console.log(data)
+        }
+    },
 }

@@ -35,6 +35,15 @@ class UserDao extends Service
     }
 
     /**
+     * @param $openId
+     * @return null|User
+     */
+    public function firstByOpenId($openId)
+    {
+        return User::query()->where('openid', $openId)->first();
+    }
+
+    /**
      * @param $userInfo = [
      *     'nickName' => '', // 昵称
      *     'avatarUrl' => '', // 头像

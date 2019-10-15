@@ -12,9 +12,12 @@ declare(strict_types=1);
 
 namespace App\Service;
 
+use App\Constants\ErrorCode;
+use App\Exception\BusinessException;
 use App\Kernel\Oauth\WeChatFactory;
 use App\Service\Dao\UserDao;
 use App\Service\Instance\JwtInstance;
+use App\Service\Redis\UserCollection;
 use Hyperf\Di\Annotation\Inject;
 
 class UserService extends Service
@@ -35,7 +38,17 @@ class UserService extends Service
     {
         $app = $this->factory->create();
 
-        return $app->auth->session($code);
+        $session = $app->auth->session($code);
+
+        $user = di()->get(UserCollection::class)->getUser($session['openid']);
+
+        if (empty($user)) {
+            throw new BusinessException(ErrorCode::USER_NOT_REGIST);
+        }
+
+        $token = JwtInstance::instance()->encode($user);
+
+        return [$token, $user];
     }
 
     public function regist($code, $encrypted_data, $iv)

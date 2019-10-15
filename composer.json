@@ -49,6 +49,7 @@
         "hyperf/redis": "dev-master",
         "hyperf/utils": "dev-master",
         "hyperf/validation": "dev-master",
+        "limingxinleo/redis-collection": "^1.2",
         "overtrue/wechat": "^4.2"
     },
     "require-dev": {

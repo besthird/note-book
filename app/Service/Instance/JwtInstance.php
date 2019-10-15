@@ -71,7 +71,7 @@ class JwtInstance
     /**
      * @return int
      */
-    public function getId(): int
+    public function getId(): ?int
     {
         return $this->id;
     }
@@ -79,7 +79,7 @@ class JwtInstance
     /**
      * @return User
      */
-    public function getUser(): User
+    public function getUser(): ?User
     {
         return $this->user;
     }
