@@ -1,4 +1,4 @@
-import { OK, FAILED } from '../config/constatns'
+import { OK, FAILED, TOKEN_INVALID, USER_NOT_REGIST } from '../config/constatns'
 
 export default {
     async request(method, url, data) {
@@ -32,6 +32,11 @@ export default {
                     title: '提示',
                     content: res.data.message
                 });
+
+                if (res.data.code === TOKEN_INVALID || res.data.code === USER_NOT_REGIST) {
+                    app.globalData.token = null;
+                }
+
                 return [res.data.code, res.data.message];
             }
 

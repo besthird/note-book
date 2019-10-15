@@ -30,9 +30,12 @@ class UserController extends Controller
     {
         $input = $request->validated();
 
-        $result = $this->service->login($input['code']);
+        [$token, $user] = $this->service->login($input['code']);
 
-        return $this->response->success($result);
+        return $this->response->success([
+            'token' => $token,
+            'user' => UserFormatter::instance()->base($user),
+        ]);
     }
 
     public function regist(RegistRequest $request)
