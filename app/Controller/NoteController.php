@@ -12,6 +12,7 @@ declare(strict_types=1);
 
 namespace App\Controller;
 
+use App\Request\NoteSearchRequest;
 use App\Request\SaveNoteRequest;
 use App\Service\Instance\JwtInstance;
 use App\Service\NoteService;
@@ -25,9 +26,19 @@ class NoteController extends Controller
      */
     protected $service;
 
+    public function index(NoteSearchRequest $request)
+    {
+        $offset = (int) $request->input('offset');
+        $limit = (int) $request->input('limit');
+
+        $result = $this->service->search($offset, $limit);
+
+        return $this->response->success($result);
+    }
+
     public function save(SaveNoteRequest $request, int $id)
     {
-        $text = $request->validated()['text'];
+        $text = $request->input('text');
 
         $userId = JwtInstance::instance()->build()->getId();
 

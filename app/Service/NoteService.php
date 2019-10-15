@@ -16,6 +16,7 @@ use App\Constants\ErrorCode;
 use App\Exception\BusinessException;
 use App\Model\Note;
 use App\Service\Dao\NoteDao;
+use App\Service\Formatter\NoteFormatter;
 use Hyperf\Di\Annotation\Inject;
 
 class NoteService extends Service
@@ -25,6 +26,13 @@ class NoteService extends Service
      * @var NoteDao
      */
     protected $dao;
+
+    public function search($offset, $limit)
+    {
+        $models = $this->dao->find([], $offset, $limit);
+
+        return NoteFormatter::instance()->formatArray($models);
+    }
 
     public function save($id, $userId, $text)
     {

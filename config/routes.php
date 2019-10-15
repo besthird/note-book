@@ -17,3 +17,4 @@ Router::post('/login', 'App\Controller\UserController@login');
 Router::post('/regist', 'App\Controller\UserController@regist');
 
 Router::post('/note/{id:\d+}', 'App\Controller\NoteController@save');
+Router::get('/note', 'App\Controller\NoteController@index');

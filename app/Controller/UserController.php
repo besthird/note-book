@@ -28,9 +28,9 @@ class UserController extends Controller
 
     public function login(LoginRequest $request)
     {
-        $input = $request->validated();
+        $code = (string) $request->input('code');
 
-        [$token, $user] = $this->service->login($input['code']);
+        [$token, $user] = $this->service->login($code);
 
         return $this->response->success([
             'token' => $token,
@@ -40,9 +40,11 @@ class UserController extends Controller
 
     public function regist(RegistRequest $request)
     {
-        $input = $request->validated();
+        $code = (string) $request->input('code');
+        $encryptedData = (string) $request->input('encrypted_data');
+        $iv = (string) $request->input('iv');
 
-        [$token, $user] = $this->service->regist($input['code'], $input['encrypted_data'], $input['iv']);
+        [$token, $user] = $this->service->regist($code, $encryptedData, $iv);
 
         return $this->response->success([
             'token' => $token,

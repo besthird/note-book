@@ -28,4 +28,16 @@ class NoteTest extends HttpTestCase
 
         $this->assertSame(0, $res['code']);
     }
+
+    public function testNoteIndex()
+    {
+        $res = $this->get('/note', [
+            'offset' => '0',
+            'limit' => '1',
+        ]);
+
+        var_dump($res);
+
+        $this->assertSame(0, $res['code']);
+    }
 }

@@ -33,4 +33,11 @@ class NoteDao extends Service
 
         return $model;
     }
+
+    public function find($query, $offset = 0, $limit = 10)
+    {
+        $query = Note::query();
+
+        return $query->orderBy('id', 'desc')->offset($offset)->limit($limit)->get();
+    }
 }
