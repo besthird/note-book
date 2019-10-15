@@ -88,12 +88,9 @@
 
                 switch (e.index) {
                     case 0:
-                        await this.popup();
+                        this.$refs.popup.open();
                         break;
                 }
-            },
-            async popup() {
-                this.$refs.popup.open();
             },
             async submit(e) {
                 let formId = e.detail.formId;

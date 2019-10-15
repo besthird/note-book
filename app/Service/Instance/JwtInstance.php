@@ -61,7 +61,7 @@ class JwtInstance
 
     public function build(): self
     {
-        if (empty($this->id) || ! $this->user instanceof User) {
+        if (empty($this->id)) {
             throw new BusinessException(ErrorCode::TOKEN_INVALID);
         }
 
@@ -81,6 +81,9 @@ class JwtInstance
      */
     public function getUser(): ?User
     {
+        if ($this->user === null && $this->id) {
+            $this->user = di()->get(UserDao::class)->first($this->id);
+        }
         return $this->user;
     }
 }

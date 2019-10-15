@@ -44,4 +44,14 @@ class ErrorCode extends AbstractConstants
      * @Message("用户不存在")
      */
     const USER_NOT_EXIST = 1001;
+
+    /**
+     * @Message("用户越权操作")
+     */
+    const USER_INVALID = 1002;
+
+    /**
+     * @Message("当前记录不存在")
+     */
+    const NOTE_NOT_EXIST = 1100;
 }

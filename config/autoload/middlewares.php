@@ -14,5 +14,6 @@ return [
     'http' => [
         \App\Middleware\DebugMiddleware::class,
         \Hyperf\Validation\Middleware\ValidationMiddleware::class,
+        \App\Middleware\UserMiddleware::class,
     ],
 ];
