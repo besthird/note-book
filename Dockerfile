@@ -5,7 +5,7 @@
 # @contact  group@hyperf.io
 # @license  https://github.com/hyperf-cloud/hyperf/blob/master/LICENSE
 
-FROM hyperf/hyperf:7.2-alpine-cli
+FROM hyperf/hyperf:7.3-alpine-cli
 LABEL maintainer="Hyperf Developers <group@hyperf.io>" version="1.0" license="MIT"
 
 ##
@@ -54,7 +54,7 @@ WORKDIR /opt/www
 COPY . /opt/www
 RUN composer install --no-dev \
     && composer dump-autoload -o \
-    && php /opt/www/bin/hyperf.php di:init-proxy
+    && sh /opt/www/bin/init.sh
 
 EXPOSE 9501
 
