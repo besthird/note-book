@@ -25,7 +25,8 @@
             <form v-else @submit="submit" report-submit="true">
                 <view class="uni-title uni-common-pl">发布信息</view>
                 <view class="uni-textarea">
-                    <textarea name="text" show-confirm-bar="true" @submit="submit"/>
+                    <edit paddingBottom="20" ref="edit" placeText="写点什么吧..."></edit>
+<!--                    <textarea name="text" show-confirm-bar="true" @submit="submit" maxlength="-1"/>-->
                 </view>
                 <view class="uni-btn-v">
                     <button form-type="reset" size="mini">Reset</button>
@@ -44,12 +45,13 @@
     import uniPopup from "@dcloudio/uni-ui/lib/uni-popup/uni-popup.vue"
     import uniCard from "@dcloudio/uni-ui/lib/uni-card/uni-card"
     import uniFab from '@dcloudio/uni-ui/lib/uni-fab/uni-fab.vue'
+    import edit from '../../components/wjx-edit/wjx-edit.vue';
     import core from "../../core/core";
     import note from '../../core/note';
     import marked from 'marked'
 
     export default {
-        components: { uniPopup, uniCard, uniFab },
+        components: { uniPopup, uniCard, uniFab, edit },
         data() {
             return {
                 isLogin: true,
