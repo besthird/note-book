@@ -36,8 +36,6 @@ class NoteTest extends HttpTestCase
             'limit' => '1',
         ]);
 
-        var_dump($res);
-
         $this->assertSame(0, $res['code']);
     }
 }

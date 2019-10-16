@@ -895,12 +895,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf-cloud/amqp.git",
-                "reference": "f3b652fce5880b1a4f7aea80f4815a2c0c9b3715"
+                "reference": "511b9294125074f639726bcdf0ed9596ca918051"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hyperf-cloud/amqp/zipball/f3b652fce5880b1a4f7aea80f4815a2c0c9b3715",
-                "reference": "f3b652fce5880b1a4f7aea80f4815a2c0c9b3715",
+                "url": "https://api.github.com/repos/hyperf-cloud/amqp/zipball/511b9294125074f639726bcdf0ed9596ca918051",
+                "reference": "511b9294125074f639726bcdf0ed9596ca918051",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -958,7 +958,7 @@
                 "hyperf",
                 "php"
             ],
-            "time": "2019-10-13T03:53:24+00:00"
+            "time": "2019-10-14T07:16:53+00:00"
         },
         {
             "name": "hyperf/async-queue",
@@ -1400,12 +1400,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf-cloud/database.git",
-                "reference": "8d4ee1439ab119724d2e2e7c11366e90e1de4759"
+                "reference": "0ecc12976fc57b41becafbbda828135c6b8691b9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hyperf-cloud/database/zipball/8d4ee1439ab119724d2e2e7c11366e90e1de4759",
-                "reference": "8d4ee1439ab119724d2e2e7c11366e90e1de4759",
+                "url": "https://api.github.com/repos/hyperf-cloud/database/zipball/0ecc12976fc57b41becafbbda828135c6b8691b9",
+                "reference": "0ecc12976fc57b41becafbbda828135c6b8691b9",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -1453,7 +1453,7 @@
                 "hyperf",
                 "php"
             ],
-            "time": "2019-10-09T01:44:09+00:00"
+            "time": "2019-10-15T01:52:14+00:00"
         },
         {
             "name": "hyperf/db-connection",
@@ -2835,12 +2835,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf-cloud/validation.git",
-                "reference": "49a55d812e5b90550f499e7340eee6f16293a04c"
+                "reference": "17ec06d5841a5c31c2158492d6b0193971d1da69"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hyperf-cloud/validation/zipball/49a55d812e5b90550f499e7340eee6f16293a04c",
-                "reference": "49a55d812e5b90550f499e7340eee6f16293a04c",
+                "url": "https://api.github.com/repos/hyperf-cloud/validation/zipball/17ec06d5841a5c31c2158492d6b0193971d1da69",
+                "reference": "17ec06d5841a5c31c2158492d6b0193971d1da69",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -2898,7 +2898,7 @@
                 "hyperf",
                 "validation"
             ],
-            "time": "2019-10-12T02:18:09+00:00"
+            "time": "2019-10-12T04:10:13+00:00"
         },
         {
             "name": "limingxinleo/redis-collection",
