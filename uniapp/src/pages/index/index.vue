@@ -3,6 +3,7 @@
         <view v-for="item in items">
             <uni-card :title="item.user.nickname" :thumbnail="item.user.avatar">
                 <rich-text :nodes="item.text"></rich-text>
+                <u-parse :content="article" @preview="preview" @navigate="navigate"></u-parse>
             </uni-card>
             <view style="height:10px"></view>
         </view>
@@ -24,7 +25,6 @@
             <form v-else @submit="submit" report-submit="true">
                 <view class="uni-title uni-common-pl">发布信息</view>
                 <view class="uni-textarea">
-                    <!--                    <textarea name="text" show-confirm-bar="true" @submit="submit"/>-->
                     <editor id="editor" name="text" class="ql-container" @input="input" @ready="onEditorReady"></editor>
                 </view>
                 <view class="uni-btn-v">
@@ -60,6 +60,7 @@
                 items: [],
                 end: false,
                 text: "",
+                article: "<div>我是HTML代码</div>",
                 // 以下为 uniFab 配置
                 horizontal: 'right',
                 vertical: 'bottom',

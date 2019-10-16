@@ -1,1 +1,1 @@
-export const BASE_URI = 'https://note-book.api.lmx0536.cn';
+export const BASE_URI = 'http://127.0.0.1:9501';
