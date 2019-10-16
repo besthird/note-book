@@ -54,4 +54,9 @@ class ErrorCode extends AbstractConstants
      * @Message("当前记录不存在")
      */
     const NOTE_NOT_EXIST = 1100;
+
+    /**
+     * @Message("文本审核 TOKEN 获取失败")
+     */
+    const SPAM_TOKEN_FETCH_FAILED = 1200;
 }

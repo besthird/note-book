@@ -3,7 +3,6 @@
         <view v-for="item in items">
             <uni-card :title="item.user.nickname" :thumbnail="item.user.avatar">
                 <rich-text :nodes="item.text"></rich-text>
-                <u-parse :content="article" @preview="preview" @navigate="navigate"></u-parse>
             </uni-card>
             <view style="height:10px"></view>
         </view>
@@ -29,7 +28,7 @@
                 </view>
                 <view class="uni-btn-v">
                     <button type="warn" @tap="undo" size="mini">Reset</button>
-                    <button form-type="submit" size="mini">Submit</button>
+                    <button type="primary" form-type="submit" size="mini">Submit</button>
                 </view>
             </form>
         </uni-popup>
