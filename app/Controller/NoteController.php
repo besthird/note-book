@@ -31,6 +31,11 @@ class NoteController extends Controller
         $offset = (int) $request->input('offset');
         $limit = (int) $request->input('limit');
 
+        $userId = JwtInstance::instance()->getId();
+        if ($userId == 0) {
+            return $this->response->success([]);
+        }
+
         $result = $this->service->search($offset, $limit);
 
         return $this->response->success($result);
