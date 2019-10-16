@@ -34,6 +34,30 @@ class SpamClient extends Service
      */
     protected $manager;
 
+    public function spam(string $content)
+    {
+        $uri = '/rest/2.0/antispam/v2/spam?access_token=' . $this->getToken();
+        $params = [
+            'content' => $content,
+        ];
+
+        $str = $this->client()->post($uri, [
+            'form_params' => $params,
+        ])->getBody()->getContents();
+
+        $result = json_decode($str, true);
+
+        if (! isset($result['result']['reject'])) {
+            return false;
+        }
+
+        if (! empty($result['result']['reject']) || ! empty($result['result']['review'])) {
+            return false;
+        }
+
+        return true;
+    }
+
     public function getToken(): string
     {
         return (string) $this->manager->call(function () {

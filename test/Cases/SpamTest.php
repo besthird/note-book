@@ -27,4 +27,13 @@ class SpamTest extends HttpTestCase
 
         $this->assertNotEmpty($token);
     }
+
+    public function testSpamSpam()
+    {
+        $res = di()->get(SpamClient::class)->spam('习近平');
+        $this->assertFalse($res);
+
+        $res = di()->get(SpamClient::class)->spam('您好');
+        $this->assertTrue($res);
+    }
 }
