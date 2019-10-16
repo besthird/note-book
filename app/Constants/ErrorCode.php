@@ -59,4 +59,9 @@ class ErrorCode extends AbstractConstants
      * @Message("文本审核 TOKEN 获取失败")
      */
     const SPAM_TOKEN_FETCH_FAILED = 1200;
+
+    /**
+     * @Message("涉嫌敏感话题，请修改后再试")
+     */
+    const SPAM_REJECT = 1201;
 }

@@ -15,6 +15,7 @@ namespace App\Service;
 use App\Constants\ErrorCode;
 use App\Exception\BusinessException;
 use App\Model\Note;
+use App\Service\Client\SpamClient;
 use App\Service\Dao\NoteDao;
 use App\Service\Formatter\NoteFormatter;
 use Hyperf\Di\Annotation\Inject;
@@ -36,6 +37,12 @@ class NoteService extends Service
 
     public function save($id, $userId, $text)
     {
+        // 检测文本是否合法
+        $valid = di()->get(SpamClient::class)->spam($text);
+        if (! $valid) {
+            throw new BusinessException(ErrorCode::SPAM_REJECT);
+        }
+
         if ($id > 0) {
             $note = $this->dao->first($id, true);
             if ($note->user_id != $userId) {
