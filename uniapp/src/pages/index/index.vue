@@ -1,8 +1,7 @@
 <template>
     <view class="content">
         <view v-for="item in items">
-            <uni-card :title="item.user.nickname" :thumbnail="item.user.avatar"
-                      :extra="item.user.gender==1?'男':'女'">
+            <uni-card :title="item.user.nickname" :thumbnail="item.user.avatar">
                 <rich-text :nodes="item.text"></rich-text>
             </uni-card>
             <view style="height:10px"></view>
@@ -25,11 +24,11 @@
             <form v-else @submit="submit" report-submit="true">
                 <view class="uni-title uni-common-pl">发布信息</view>
                 <view class="uni-textarea">
-                    <edit paddingBottom="20" ref="edit" placeText="写点什么吧..."></edit>
-<!--                    <textarea name="text" show-confirm-bar="true" @submit="submit" maxlength="-1"/>-->
+                    <!--                    <textarea name="text" show-confirm-bar="true" @submit="submit"/>-->
+                    <editor id="editor" name="text" class="ql-container" @input="input" @ready="onEditorReady"></editor>
                 </view>
                 <view class="uni-btn-v">
-                    <button form-type="reset" size="mini">Reset</button>
+                    <button type="warn" @tap="undo" size="mini">Reset</button>
                     <button form-type="submit" size="mini">Submit</button>
                 </view>
             </form>
@@ -46,12 +45,13 @@
     import uniCard from "@dcloudio/uni-ui/lib/uni-card/uni-card"
     import uniFab from '@dcloudio/uni-ui/lib/uni-fab/uni-fab.vue'
     import edit from '../../components/wjx-edit/wjx-edit.vue';
+    import uParse from '../../components/gaoyia-parse/parse.vue'
     import core from "../../core/core";
     import note from '../../core/note';
     import marked from 'marked'
 
     export default {
-        components: { uniPopup, uniCard, uniFab, edit },
+        components: { uniPopup, uniCard, uniFab, edit, uParse },
         data() {
             return {
                 isLogin: true,
@@ -59,6 +59,7 @@
                 offset: 0,
                 items: [],
                 end: false,
+                text: "",
                 // 以下为 uniFab 配置
                 horizontal: 'right',
                 vertical: 'bottom',
@@ -98,6 +99,15 @@
         },
 
         methods: {
+            onEditorReady() {
+                uni.createSelectorQuery().select('#editor').context((res) => {
+                    this.editorCtx = res.context
+                }).exec()
+            },
+            undo() {
+                this.editorCtx.undo();
+                this.text = "";
+            },
             async trigger(e) {
                 this.$refs.fab.close();
 
@@ -106,6 +116,9 @@
                         this.$refs.popup.open();
                         break;
                 }
+            },
+            async input(e) {
+                this.text = e.detail.text;
             },
             async search() {
                 if (this.end) {
@@ -140,12 +153,12 @@
             },
             async submit(e) {
                 let formId = e.detail.formId;
-                let value = e.detail.value;
 
                 this.$refs.popup.close();
 
-                await note.save(value.text, 0);
+                await note.save(this.text, 0);
                 await this.refresh();
+                this.undo();
             },
             async regist(res) {
                 var encryptedData = res.detail.encryptedData
