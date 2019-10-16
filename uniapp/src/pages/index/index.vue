@@ -84,10 +84,7 @@
         async onLoad() {
             await request.login();
             this.isLogin = core.isLogin();
-        },
-
-        async onShow() {
-            this.search()
+            await this.refresh();
         },
 
         async onReachBottom() {

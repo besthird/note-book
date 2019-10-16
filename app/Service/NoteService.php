@@ -28,9 +28,9 @@ class NoteService extends Service
      */
     protected $dao;
 
-    public function search($offset, $limit)
+    public function search($userId = 0, $offset = 0, $limit = 10)
     {
-        $models = $this->dao->find([], $offset, $limit);
+        $models = $this->dao->find(['user_id' => $userId], $offset, $limit);
 
         return NoteFormatter::instance()->formatArray($models);
     }

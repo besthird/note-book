@@ -32,11 +32,11 @@ class NoteController extends Controller
         $limit = (int) $request->input('limit');
 
         $userId = JwtInstance::instance()->getId();
-        if ($userId == 0) {
+        if (empty($userId)) {
             return $this->response->success([]);
         }
 
-        $result = $this->service->search($offset, $limit);
+        $result = $this->service->search($userId, $offset, $limit);
 
         return $this->response->success($result);
     }
