@@ -42,3 +42,7 @@ WECHAT_SECRET=
 BAIDU_SPAM_KEY=
 BAIDU_SPAM_SECRET=
 ```
+
+# 体验二维码
+
+![](code.jpg)
