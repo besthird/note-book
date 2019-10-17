@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+
 /**
  * This file is part of Hyperf.
  *
@@ -18,3 +19,4 @@ Router::post('/regist', 'App\Controller\UserController@regist');
 
 Router::post('/note/{id:\d+}', 'App\Controller\NoteController@save');
 Router::get('/note', 'App\Controller\NoteController@index');
+Router::post('/note/delete/{id:\d+}', 'App\Controller\NoteController@delete');

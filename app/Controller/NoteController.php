@@ -28,8 +28,8 @@ class NoteController extends Controller
 
     public function index(NoteSearchRequest $request)
     {
-        $offset = (int) $request->input('offset');
-        $limit = (int) $request->input('limit');
+        $offset = (int)$request->input('offset');
+        $limit = (int)$request->input('limit');
 
         $userId = JwtInstance::instance()->getId();
         if (empty($userId)) {
@@ -48,6 +48,15 @@ class NoteController extends Controller
         $userId = JwtInstance::instance()->build()->getId();
 
         $result = $this->service->save($id, $userId, $text);
+
+        return $this->response->success($result);
+    }
+
+    public function delete(int $id)
+    {
+        $userId = JwtInstance::instance()->build()->getId();
+
+        $result = $this->service->delete($id, $userId);
 
         return $this->response->success($result);
     }

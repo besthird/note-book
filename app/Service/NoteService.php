@@ -39,7 +39,7 @@ class NoteService extends Service
     {
         // 检测文本是否合法
         $valid = di()->get(SpamClient::class)->spam($text);
-        if (! $valid) {
+        if (!$valid) {
             throw new BusinessException(ErrorCode::SPAM_REJECT);
         }
 
@@ -55,5 +55,20 @@ class NoteService extends Service
 
         $note->text = $text;
         return $note->save();
+    }
+
+    public function delete($id, $userId)
+    {
+        $model = $this->dao->first($id, false);
+        if ($model) {
+            if ($model->user_id != $userId) {
+                throw new BusinessException(ErrorCode::USER_INVALID);
+            }
+
+            $model->is_deleted = 1;
+            $model->save();
+        }
+
+        return true;
     }
 }

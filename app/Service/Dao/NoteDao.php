@@ -42,6 +42,8 @@ class NoteDao extends Service
             $query->where('user_id', $input['user_id']);
         }
 
+        $query->where('is_deleted', 1);
+
         return $query->orderBy('id', 'desc')->offset($offset)->limit($limit)->get();
     }
 }

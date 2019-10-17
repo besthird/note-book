@@ -40,4 +40,11 @@ Hyperf 还提供了 基于 PSR-11 的依赖注入容器、注解、AOP 面向切
 
         $this->assertSame(0, $res['code']);
     }
+
+    public function testNoteDelete()
+    {
+        $res = $this->post('/note/delete/12');
+
+        $this->assertSame(0, $res['code']);
+    }
 }
