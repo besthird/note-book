@@ -966,12 +966,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf-cloud/async-queue.git",
-                "reference": "9916f17996eda9c8b771561ccc2b0d4b4e4dc9f3"
+                "reference": "2aa9263e223570a193d1353049b2f8f4d1d97e84"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hyperf-cloud/async-queue/zipball/9916f17996eda9c8b771561ccc2b0d4b4e4dc9f3",
-                "reference": "9916f17996eda9c8b771561ccc2b0d4b4e4dc9f3",
+                "url": "https://api.github.com/repos/hyperf-cloud/async-queue/zipball/2aa9263e223570a193d1353049b2f8f4d1d97e84",
+                "reference": "2aa9263e223570a193d1353049b2f8f4d1d97e84",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -1023,7 +1023,7 @@
                 "hyperf",
                 "php"
             ],
-            "time": "2019-10-07T02:15:52+00:00"
+            "time": "2019-10-16T09:21:11+00:00"
         },
         {
             "name": "hyperf/cache",
@@ -5406,16 +5406,16 @@
         },
         {
             "name": "zendframework/zend-mime",
-            "version": "2.7.1",
+            "version": "2.7.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-mime.git",
-                "reference": "52ae5fa9f12845cae749271034a2d594f0e4c6f2"
+                "reference": "c91e0350be53cc9d29be15563445eec3b269d7c1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-mime/zipball/52ae5fa9f12845cae749271034a2d594f0e4c6f2",
-                "reference": "52ae5fa9f12845cae749271034a2d594f0e4c6f2",
+                "url": "https://api.github.com/repos/zendframework/zend-mime/zipball/c91e0350be53cc9d29be15563445eec3b269d7c1",
+                "reference": "c91e0350be53cc9d29be15563445eec3b269d7c1",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -5439,8 +5439,8 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.7-dev",
-                    "dev-develop": "2.8-dev"
+                    "dev-master": "2.7.x-dev",
+                    "dev-develop": "2.8.x-dev"
                 }
             },
             "autoload": {
@@ -5453,13 +5453,12 @@
                 "BSD-3-Clause"
             ],
             "description": "Create and parse MIME messages and parts",
-            "homepage": "https://github.com/zendframework/zend-mime",
             "keywords": [
                 "ZendFramework",
                 "mime",
                 "zf"
             ],
-            "time": "2018-05-14T19:02:50+00:00"
+            "time": "2019-10-16T19:30:37+00:00"
         },
         {
             "name": "zendframework/zend-stdlib",
