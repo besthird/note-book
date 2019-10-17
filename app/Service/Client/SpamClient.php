@@ -18,6 +18,7 @@ use App\Service\Service;
 use GuzzleHttp\Client;
 use GuzzleHttp\HandlerStack;
 use Hyperf\Cache\CacheManager;
+use Hyperf\Config\Annotation\Value;
 use Hyperf\Di\Annotation\Inject;
 use Hyperf\Guzzle\HandlerStackFactory;
 
@@ -34,8 +35,18 @@ class SpamClient extends Service
      */
     protected $manager;
 
+    /**
+     * @Value(key="app.switch.spam")
+     * @var bool
+     */
+    protected $spam = false;
+
     public function spam(string $content)
     {
+        if ($this->spam === false) {
+            return true;
+        }
+
         $uri = '/rest/2.0/antispam/v2/spam?access_token=' . $this->getToken();
         $params = [
             'content' => $content,

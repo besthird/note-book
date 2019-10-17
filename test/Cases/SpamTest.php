@@ -13,6 +13,7 @@ declare(strict_types=1);
 namespace HyperfTest\Cases;
 
 use App\Service\Client\SpamClient;
+use Hyperf\Contract\ConfigInterface;
 use HyperfTest\HttpTestCase;
 
 /**
@@ -31,7 +32,7 @@ class SpamTest extends HttpTestCase
     public function testSpamSpam()
     {
         $res = di()->get(SpamClient::class)->spam('习近平');
-        $this->assertFalse($res);
+        $this->assertSame(! di()->get(ConfigInterface::class)->get('app.switch.spam'), $res);
 
         $res = di()->get(SpamClient::class)->spam('您好');
         $this->assertTrue($res);
