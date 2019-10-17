@@ -38,7 +38,7 @@ class NoteDao extends Service
     {
         $query = Note::query();
 
-        if (isset($input['user_id'])) {
+        if (isset($input['user_id']) && $input['user_id'] > 0) {
             $query->where('user_id', $input['user_id']);
         }
 
