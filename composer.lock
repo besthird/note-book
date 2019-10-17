@@ -1400,12 +1400,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf-cloud/database.git",
-                "reference": "0ecc12976fc57b41becafbbda828135c6b8691b9"
+                "reference": "ba3725383b3e6b5bfa6c472de3fd66fe92eca0f8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hyperf-cloud/database/zipball/0ecc12976fc57b41becafbbda828135c6b8691b9",
-                "reference": "0ecc12976fc57b41becafbbda828135c6b8691b9",
+                "url": "https://api.github.com/repos/hyperf-cloud/database/zipball/ba3725383b3e6b5bfa6c472de3fd66fe92eca0f8",
+                "reference": "ba3725383b3e6b5bfa6c472de3fd66fe92eca0f8",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -1453,7 +1453,7 @@
                 "hyperf",
                 "php"
             ],
-            "time": "2019-10-15T01:52:14+00:00"
+            "time": "2019-10-16T06:29:29+00:00"
         },
         {
             "name": "hyperf/db-connection",
@@ -1461,12 +1461,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf-cloud/db-connection.git",
-                "reference": "75b59360d0e52e390e24371e17d4017fce731a5c"
+                "reference": "e1099b375d1d3ccae6baa7d7765157698bac2d2d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hyperf-cloud/db-connection/zipball/75b59360d0e52e390e24371e17d4017fce731a5c",
-                "reference": "75b59360d0e52e390e24371e17d4017fce731a5c",
+                "url": "https://api.github.com/repos/hyperf-cloud/db-connection/zipball/e1099b375d1d3ccae6baa7d7765157698bac2d2d",
+                "reference": "e1099b375d1d3ccae6baa7d7765157698bac2d2d",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -1515,7 +1515,7 @@
                 "hyperf",
                 "php"
             ],
-            "time": "2019-10-07T02:15:52+00:00"
+            "time": "2019-10-16T06:29:29+00:00"
         },
         {
             "name": "hyperf/devtool",
@@ -2764,12 +2764,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf-cloud/utils.git",
-                "reference": "90035c1938c361bbe12cdfbdc3941857086c3082"
+                "reference": "5bea7f1ba0cd3410bfc5840258036c80350b707b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hyperf-cloud/utils/zipball/90035c1938c361bbe12cdfbdc3941857086c3082",
-                "reference": "90035c1938c361bbe12cdfbdc3941857086c3082",
+                "url": "https://api.github.com/repos/hyperf-cloud/utils/zipball/5bea7f1ba0cd3410bfc5840258036c80350b707b",
+                "reference": "5bea7f1ba0cd3410bfc5840258036c80350b707b",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -2827,7 +2827,7 @@
                 "swoole",
                 "utils"
             ],
-            "time": "2019-10-07T02:15:52+00:00"
+            "time": "2019-10-17T02:12:34+00:00"
         },
         {
             "name": "hyperf/validation",
@@ -2835,12 +2835,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf-cloud/validation.git",
-                "reference": "17ec06d5841a5c31c2158492d6b0193971d1da69"
+                "reference": "69e89b904e33fcc5adcc00d3d0590ed480318c21"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hyperf-cloud/validation/zipball/17ec06d5841a5c31c2158492d6b0193971d1da69",
-                "reference": "17ec06d5841a5c31c2158492d6b0193971d1da69",
+                "url": "https://api.github.com/repos/hyperf-cloud/validation/zipball/69e89b904e33fcc5adcc00d3d0590ed480318c21",
+                "reference": "69e89b904e33fcc5adcc00d3d0590ed480318c21",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -2898,7 +2898,7 @@
                 "hyperf",
                 "validation"
             ],
-            "time": "2019-10-12T04:10:13+00:00"
+            "time": "2019-10-17T02:12:34+00:00"
         },
         {
             "name": "limingxinleo/redis-collection",
@@ -8863,16 +8863,16 @@
         },
         {
             "name": "swoft/swoole-ide-helper",
-            "version": "v4.4.7",
+            "version": "v4.4.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/swoft-cloud/swoole-ide-helper.git",
-                "reference": "0e4b21fd8d47c4047a421fcea809850a8da707b5"
+                "reference": "dfbe372cca6baccd362bc276aa07c5d65b2c1b36"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/swoft-cloud/swoole-ide-helper/zipball/0e4b21fd8d47c4047a421fcea809850a8da707b5",
-                "reference": "0e4b21fd8d47c4047a421fcea809850a8da707b5",
+                "url": "https://api.github.com/repos/swoft-cloud/swoole-ide-helper/zipball/dfbe372cca6baccd362bc276aa07c5d65b2c1b36",
+                "reference": "dfbe372cca6baccd362bc276aa07c5d65b2c1b36",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -8893,7 +8893,7 @@
                 "swoft",
                 "swoole"
             ],
-            "time": "2019-09-26T09:15:01+00:00"
+            "time": "2019-10-17T09:54:14+00:00"
         },
         {
             "name": "symfony/config",
