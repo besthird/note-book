@@ -5,7 +5,7 @@
                 <rich-text :nodes="item.text"></rich-text>
                 <template v-slot:footer>
                     <view class="footer-box">
-                        <view @click="del">删除</view>
+                        <view @click="del(item)">删除</view>
                     </view>
                 </template>
             </uni-card>
