@@ -1,8 +1,13 @@
 <template>
     <view class="content">
         <view v-for="item in items">
-            <uni-card :title="item.user.nickname" :thumbnail="item.user.avatar">
+            <uni-card :title="item.user.nickname" :thumbnail="item.user.avatar" note="操作">
                 <rich-text :nodes="item.text"></rich-text>
+                <template v-slot:footer>
+                    <view class="footer-box">
+                        <view @click="del">删除</view>
+                    </view>
+                </template>
             </uni-card>
             <view style="height:10px"></view>
         </view>
@@ -104,6 +109,9 @@
             undo() {
                 this.editorCtx.undo();
                 this.text = "";
+            },
+            async del(e, v) {
+                console.log(e, v)
             },
             async trigger(e) {
                 this.$refs.fab.close();

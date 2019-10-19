@@ -22,6 +22,10 @@ namespace App\Model;
  */
 class Note extends Model
 {
+    const DELETED = 1;
+
+    const NOT_DELETED = 0;
+
     /**
      * The table associated with the model.
      *

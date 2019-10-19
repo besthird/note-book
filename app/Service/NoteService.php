@@ -65,7 +65,7 @@ class NoteService extends Service
                 throw new BusinessException(ErrorCode::USER_INVALID);
             }
 
-            $model->is_deleted = 1;
+            $model->is_deleted = Note::DELETED;
             $model->save();
         }
 
