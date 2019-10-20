@@ -3,7 +3,6 @@
         <view v-for="item in items">
             <uni-card :title="item.user.nickname" :thumbnail="item.user.avatar" :extra="item.created_date" mode="basic"
                       note="true">
-<!--                <rich-text :nodes="item.text"></rich-text>-->
                 <parser :html="item.text" selectable="true" lazy-load="true"></parser>
                 <template v-slot:footer>
                     <view class="footer-box">
