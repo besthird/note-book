@@ -29,7 +29,7 @@
                     withCredentials="true">login
             </button>
             <form v-else @submit="submit" report-submit="true">
-                <view class="uni-title uni-common-pl">发布信息</view>
+                <view class="uni-title uni-common-pl">记录信息</view>
                 <view class="uni-textarea">
                     <editor id="editor" name="text" class="ql-container" @input="input" @ready="onEditorReady"></editor>
                 </view>
@@ -82,7 +82,7 @@
                     {
                         iconPath: '/static/edit_line.png',
                         selectedIconPath: '/static/edit_line.png',
-                        text: '发布',
+                        text: '记录',
                         active: false
                     }
                 ]
