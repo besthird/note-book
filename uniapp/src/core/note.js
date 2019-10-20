@@ -23,5 +23,11 @@ export default {
         });
 
         return [err, data];
+    },
+
+    async del(id) {
+        let [err, data] = await request.request('POST', '/note/delete/' + id, {});
+
+        return [err, data];
     }
 }

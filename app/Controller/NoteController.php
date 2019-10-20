@@ -28,8 +28,8 @@ class NoteController extends Controller
 
     public function index(NoteSearchRequest $request)
     {
-        $offset = (int)$request->input('offset');
-        $limit = (int)$request->input('limit');
+        $offset = (int) $request->input('offset');
+        $limit = (int) $request->input('limit');
 
         $userId = JwtInstance::instance()->getId();
         if (empty($userId)) {

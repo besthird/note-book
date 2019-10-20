@@ -1,11 +1,11 @@
 <template>
     <view class="content">
         <view v-for="item in items">
-            <uni-card :title="item.user.nickname" :thumbnail="item.user.avatar" note="操作">
+            <uni-card :title="item.user.nickname" :thumbnail="item.user.avatar" mode="basic" :note="item.created_at">
                 <rich-text :nodes="item.text"></rich-text>
                 <template v-slot:footer>
                     <view class="footer-box">
-                        <view @click="del(item)">删除</view>
+                        <view @click="del" :id="item.id">删除</view>
                     </view>
                 </template>
             </uni-card>
@@ -110,8 +110,17 @@
                 this.editorCtx.undo();
                 this.text = "";
             },
-            async del(e, v) {
-                console.log(e, v)
+            async del(e) {
+                let id = e.target.id;
+
+                let [err, data] = await note.del(id);
+                if(err === OK){
+                    uni.showModal({
+                        title:"删除成功"
+                    })
+
+                    await this.refresh();
+                }
             },
             async trigger(e) {
                 this.$refs.fab.close();

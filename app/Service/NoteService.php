@@ -39,7 +39,7 @@ class NoteService extends Service
     {
         // 检测文本是否合法
         $valid = di()->get(SpamClient::class)->spam($text);
-        if (!$valid) {
+        if (! $valid) {
             throw new BusinessException(ErrorCode::SPAM_REJECT);
         }
 
