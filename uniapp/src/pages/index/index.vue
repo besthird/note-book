@@ -1,8 +1,10 @@
 <template>
     <view class="content">
         <view v-for="item in items">
-            <uni-card :title="item.user.nickname" :thumbnail="item.user.avatar" :extra="item.created_date" mode="basic" note="true">
-                <rich-text :nodes="item.text"></rich-text>
+            <uni-card :title="item.user.nickname" :thumbnail="item.user.avatar" :extra="item.created_date" mode="basic"
+                      note="true">
+<!--                <rich-text :nodes="item.text"></rich-text>-->
+                <parser :html="item.text" selectable="true" lazy-load="true"></parser>
                 <template v-slot:footer>
                     <view class="footer-box">
                         <view @click="del" :id="item.id">删除</view>
@@ -50,12 +52,13 @@
     import uniFab from '@dcloudio/uni-ui/lib/uni-fab/uni-fab.vue'
     import edit from '../../components/wjx-edit/wjx-edit.vue';
     import uParse from '../../components/gaoyia-parse/parse.vue'
+    import parser from "../../components/jyf-Parser/index"
     import core from "../../core/core";
     import note from '../../core/note';
     import marked from 'marked'
 
     export default {
-        components: { uniPopup, uniCard, uniFab, edit, uParse },
+        components: { uniPopup, uniCard, uniFab, edit, uParse, parser },
         data() {
             return {
                 isLogin: true,
