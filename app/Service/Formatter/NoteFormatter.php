@@ -24,6 +24,7 @@ class NoteFormatter extends Formatter
             'user_id' => $model->user_id,
             'text' => $model->text,
             'created_at' => $model->created_at->toDateTimeString(),
+            'created_date' => $model->created_at->toDateString(),
         ];
     }
 
