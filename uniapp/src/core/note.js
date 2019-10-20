@@ -8,8 +8,9 @@ export default {
         });
 
         if (err === OK) {
-            uni.showModal({
-                title: "发布成功"
+            uni.showToast({
+                title: "发布成功",
+                duration: 1000
             });
         }
 

@@ -113,14 +113,24 @@
             async del(e) {
                 let id = e.target.id;
 
-                let [err, data] = await note.del(id);
-                if(err === OK){
-                    uni.showModal({
-                        title:"删除成功"
-                    })
+                var [err, res] = await uni.showModal({
+                    title: "提示",
+                    content: "确定删除么？"
+                })
 
-                    await this.refresh();
+                if (res.confirm) {
+                    let [err, data] = await note.del(id);
+                    if (err === OK) {
+                        uni.showToast({
+                            title: "删除成功",
+                            duration: 1000
+                        })
+
+                        await this.refresh();
+                    }
                 }
+
+                console.log(res)
             },
             async trigger(e) {
                 this.$refs.fab.close();
