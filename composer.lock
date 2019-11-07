@@ -1463,12 +1463,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf/db-connection.git",
-                "reference": "777130a674711e36e03590dcef5250a2c9808ae8"
+                "reference": "4865628a34c173da47b2aadba4c4e026f9b7547b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hyperf/db-connection/zipball/777130a674711e36e03590dcef5250a2c9808ae8",
-                "reference": "777130a674711e36e03590dcef5250a2c9808ae8",
+                "url": "https://api.github.com/repos/hyperf/db-connection/zipball/4865628a34c173da47b2aadba4c4e026f9b7547b",
+                "reference": "4865628a34c173da47b2aadba4c4e026f9b7547b",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -1517,7 +1517,7 @@
                 "hyperf",
                 "php"
             ],
-            "time": "2019-10-22T01:35:48+00:00"
+            "time": "2019-11-01T04:42:29+00:00"
         },
         {
             "name": "hyperf/devtool",
@@ -1525,12 +1525,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf/devtool.git",
-                "reference": "f3cb8b512fcf38b1466cdd13ed68f73735d5437b"
+                "reference": "d83066e40098141a88791776dbe2578127dee8dc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hyperf/devtool/zipball/f3cb8b512fcf38b1466cdd13ed68f73735d5437b",
-                "reference": "f3cb8b512fcf38b1466cdd13ed68f73735d5437b",
+                "url": "https://api.github.com/repos/hyperf/devtool/zipball/d83066e40098141a88791776dbe2578127dee8dc",
+                "reference": "d83066e40098141a88791776dbe2578127dee8dc",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -1577,7 +1577,7 @@
                 "php",
                 "swoole"
             ],
-            "time": "2019-10-26T10:07:54+00:00"
+            "time": "2019-11-01T05:23:00+00:00"
         },
         {
             "name": "hyperf/di",
@@ -2148,12 +2148,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf/logger.git",
-                "reference": "ecc78f5b590e322b04fe73bc69b5bb765ad8917e"
+                "reference": "7b48d4ea903044f852181169ceee65e42702315c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hyperf/logger/zipball/ecc78f5b590e322b04fe73bc69b5bb765ad8917e",
-                "reference": "ecc78f5b590e322b04fe73bc69b5bb765ad8917e",
+                "url": "https://api.github.com/repos/hyperf/logger/zipball/7b48d4ea903044f852181169ceee65e42702315c",
+                "reference": "7b48d4ea903044f852181169ceee65e42702315c",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -2200,7 +2200,7 @@
                 "logger",
                 "php"
             ],
-            "time": "2019-10-22T01:35:48+00:00"
+            "time": "2019-11-04T08:39:27+00:00"
         },
         {
             "name": "hyperf/memory",
@@ -2580,12 +2580,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf/redis.git",
-                "reference": "042e4479138b242408b98e1cc40d9d9801c6af4d"
+                "reference": "1c1fc94edf091bfe113abbe0b0ab17f4091d6817"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hyperf/redis/zipball/042e4479138b242408b98e1cc40d9d9801c6af4d",
-                "reference": "042e4479138b242408b98e1cc40d9d9801c6af4d",
+                "url": "https://api.github.com/repos/hyperf/redis/zipball/1c1fc94edf091bfe113abbe0b0ab17f4091d6817",
+                "reference": "1c1fc94edf091bfe113abbe0b0ab17f4091d6817",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -2636,7 +2636,7 @@
                 "pool",
                 "redis"
             ],
-            "time": "2019-10-28T03:54:05+00:00"
+            "time": "2019-11-07T03:34:19+00:00"
         },
         {
             "name": "hyperf/server",
@@ -2769,12 +2769,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf/utils.git",
-                "reference": "f4d293156b2190be5f539372e75154431728bf8f"
+                "reference": "a45a5ff33172e432755d5a7d8ec2ea740ec39c47"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hyperf/utils/zipball/f4d293156b2190be5f539372e75154431728bf8f",
-                "reference": "f4d293156b2190be5f539372e75154431728bf8f",
+                "url": "https://api.github.com/repos/hyperf/utils/zipball/a45a5ff33172e432755d5a7d8ec2ea740ec39c47",
+                "reference": "a45a5ff33172e432755d5a7d8ec2ea740ec39c47",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -2832,7 +2832,7 @@
                 "swoole",
                 "utils"
             ],
-            "time": "2019-11-01T09:32:15+00:00"
+            "time": "2019-11-05T08:17:46+00:00"
         },
         {
             "name": "hyperf/validation",
@@ -3048,16 +3048,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "2.25.3",
+            "version": "2.26.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "d07636581795383e2fea2d711212d30f941f2039"
+                "reference": "e01ecc0b71168febb52ae1fdc1cfcc95428e604e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/d07636581795383e2fea2d711212d30f941f2039",
-                "reference": "d07636581795383e2fea2d711212d30f941f2039",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/e01ecc0b71168febb52ae1fdc1cfcc95428e604e",
+                "reference": "e01ecc0b71168febb52ae1fdc1cfcc95428e604e",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -3117,7 +3117,7 @@
                 "datetime",
                 "time"
             ],
-            "time": "2019-10-20T11:05:44+00:00"
+            "time": "2019-10-21T21:32:25+00:00"
         },
         {
             "name": "nikic/fast-route",
@@ -3484,16 +3484,16 @@
         },
         {
             "name": "phpoption/phpoption",
-            "version": "1.5.0",
+            "version": "1.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmittjoh/php-option.git",
-                "reference": "94e644f7d2051a5f0fcf77d81605f152eecff0ed"
+                "reference": "894e8f93890b79f29911cce497fe811fe9d931ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/94e644f7d2051a5f0fcf77d81605f152eecff0ed",
-                "reference": "94e644f7d2051a5f0fcf77d81605f152eecff0ed",
+                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/894e8f93890b79f29911cce497fe811fe9d931ba",
+                "reference": "894e8f93890b79f29911cce497fe811fe9d931ba",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -3521,7 +3521,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "Apache2"
+                "Apache-2.0"
             ],
             "authors": [
                 {
@@ -3536,7 +3536,7 @@
                 "php",
                 "type"
             ],
-            "time": "2015-07-25T16:39:46+00:00"
+            "time": "2019-11-06T12:42:47+00:00"
         },
         {
             "name": "pimple/pimple",
@@ -5593,16 +5593,16 @@
         },
         {
             "name": "composer/xdebug-handler",
-            "version": "1.3.3",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/xdebug-handler.git",
-                "reference": "46867cbf8ca9fb8d60c506895449eb799db1184f"
+                "reference": "cbe23383749496fe0f373345208b79568e4bc248"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/xdebug-handler/zipball/46867cbf8ca9fb8d60c506895449eb799db1184f",
-                "reference": "46867cbf8ca9fb8d60c506895449eb799db1184f",
+                "url": "https://api.github.com/repos/composer/xdebug-handler/zipball/cbe23383749496fe0f373345208b79568e4bc248",
+                "reference": "cbe23383749496fe0f373345208b79568e4bc248",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -5612,11 +5612,11 @@
                 ]
             },
             "require": {
-                "php": "^5.3.2 || ^7.0",
+                "php": "^5.3.2 || ^7.0 || ^8.0",
                 "psr/log": "^1.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.5"
+                "phpunit/phpunit": "^4.8.35 || ^5.7 || 6.5 - 8"
             },
             "type": "library",
             "autoload": {
@@ -5634,12 +5634,12 @@
                     "email": "john-stevenson@blueyonder.co.uk"
                 }
             ],
-            "description": "Restarts a process without xdebug.",
+            "description": "Restarts a process without Xdebug.",
             "keywords": [
                 "Xdebug",
                 "performance"
             ],
-            "time": "2019-05-27T17:52:04+00:00"
+            "time": "2019-11-06T16:40:04+00:00"
         },
         {
             "name": "friendsofphp/php-cs-fixer",
