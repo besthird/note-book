@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "935b9a0eeae335f5a363ec7130f76e39",
+    "content-hash": "fa238bdfe1f1d9b4e58d9eed9619753c",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -82,16 +82,16 @@
         },
         {
             "name": "doctrine/inflector",
-            "version": "v1.3.0",
+            "version": "1.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/inflector.git",
-                "reference": "5527a48b7313d15261292c149e55e26eae771b0a"
+                "reference": "ec3a55242203ffa6a4b27c58176da97ff0a7aec1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/inflector/zipball/5527a48b7313d15261292c149e55e26eae771b0a",
-                "reference": "5527a48b7313d15261292c149e55e26eae771b0a",
+                "url": "https://api.github.com/repos/doctrine/inflector/zipball/ec3a55242203ffa6a4b27c58176da97ff0a7aec1",
+                "reference": "ec3a55242203ffa6a4b27c58176da97ff0a7aec1",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -123,16 +123,16 @@
             ],
             "authors": [
                 {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
                     "name": "Roman Borschel",
                     "email": "roman@code-factory.org"
                 },
                 {
                     "name": "Benjamin Eberlei",
                     "email": "kontakt@beberlei.de"
-                },
-                {
-                    "name": "Guilherme Blanco",
-                    "email": "guilhermeblanco@gmail.com"
                 },
                 {
                     "name": "Jonathan Wage",
@@ -151,20 +151,20 @@
                 "singularize",
                 "string"
             ],
-            "time": "2018-01-09T20:05:19+00:00"
+            "time": "2019-10-30T19:59:35+00:00"
         },
         {
             "name": "doctrine/instantiator",
-            "version": "1.2.0",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/instantiator.git",
-                "reference": "a2c590166b2133a4633738648b6b064edae0814a"
+                "reference": "ae466f726242e637cebdd526a7d991b9433bacf1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/instantiator/zipball/a2c590166b2133a4633738648b6b064edae0814a",
-                "reference": "a2c590166b2133a4633738648b6b064edae0814a",
+                "url": "https://api.github.com/repos/doctrine/instantiator/zipball/ae466f726242e637cebdd526a7d991b9433bacf1",
+                "reference": "ae466f726242e637cebdd526a7d991b9433bacf1",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -213,20 +213,20 @@
                 "constructor",
                 "instantiate"
             ],
-            "time": "2019-03-17T17:37:11+00:00"
+            "time": "2019-10-21T16:45:58+00:00"
         },
         {
             "name": "doctrine/lexer",
-            "version": "1.1.0",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/lexer.git",
-                "reference": "e17f069ede36f7534b95adec71910ed1b49c74ea"
+                "reference": "5242d66dbeb21a30dd8a3e66bf7a73b66e05e1f6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/lexer/zipball/e17f069ede36f7534b95adec71910ed1b49c74ea",
-                "reference": "e17f069ede36f7534b95adec71910ed1b49c74ea",
+                "url": "https://api.github.com/repos/doctrine/lexer/zipball/5242d66dbeb21a30dd8a3e66bf7a73b66e05e1f6",
+                "reference": "5242d66dbeb21a30dd8a3e66bf7a73b66e05e1f6",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -246,7 +246,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.1.x-dev"
+                    "dev-master": "1.2.x-dev"
                 }
             },
             "autoload": {
@@ -281,7 +281,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2019-07-30T19:33:28+00:00"
+            "time": "2019-10-30T14:39:59+00:00"
         },
         {
             "name": "easywechat-composer/easywechat-composer",
@@ -396,72 +396,6 @@
                 "validator"
             ],
             "time": "2019-08-13T17:33:27+00:00"
-        },
-        {
-            "name": "elasticsearch/elasticsearch",
-            "version": "v6.7.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/elastic/elasticsearch-php.git",
-                "reference": "9ba89f905ebf699e72dacffa410331c7fecc8255"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/elastic/elasticsearch-php/zipball/9ba89f905ebf699e72dacffa410331c7fecc8255",
-                "reference": "9ba89f905ebf699e72dacffa410331c7fecc8255",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
-            },
-            "require": {
-                "ext-json": ">=1.3.7",
-                "guzzlehttp/ringphp": "~1.0",
-                "php": "^7.0",
-                "psr/log": "~1.0"
-            },
-            "require-dev": {
-                "cpliakas/git-wrapper": "^1.7 || ^2.1",
-                "doctrine/inflector": "^1.1",
-                "mockery/mockery": "^1.2",
-                "phpstan/phpstan-shim": "^0.9 || ^0.11",
-                "phpunit/phpunit": "^5.7 || ^6.5",
-                "squizlabs/php_codesniffer": "^3.4",
-                "symfony/finder": "^2.8",
-                "symfony/yaml": "^2.8"
-            },
-            "suggest": {
-                "ext-curl": "*",
-                "monolog/monolog": "Allows for client-level logging and tracing"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Elasticsearch\\": "src/Elasticsearch/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "Apache-2.0"
-            ],
-            "authors": [
-                {
-                    "name": "Zachary Tong"
-                },
-                {
-                    "name": "Enrico Zimuel"
-                }
-            ],
-            "description": "PHP Client for Elasticsearch",
-            "keywords": [
-                "client",
-                "elasticsearch",
-                "search"
-            ],
-            "time": "2019-07-19T14:48:24+00:00"
         },
         {
             "name": "fig/http-message-util",
@@ -778,119 +712,6 @@
             "time": "2019-07-01T23:21:34+00:00"
         },
         {
-            "name": "guzzlehttp/ringphp",
-            "version": "1.1.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/guzzle/RingPHP.git",
-                "reference": "5e2a174052995663dd68e6b5ad838afd47dd615b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/RingPHP/zipball/5e2a174052995663dd68e6b5ad838afd47dd615b",
-                "reference": "5e2a174052995663dd68e6b5ad838afd47dd615b",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
-            },
-            "require": {
-                "guzzlehttp/streams": "~3.0",
-                "php": ">=5.4.0",
-                "react/promise": "~2.0"
-            },
-            "require-dev": {
-                "ext-curl": "*",
-                "phpunit/phpunit": "~4.0"
-            },
-            "suggest": {
-                "ext-curl": "Guzzle will use specific adapters if cURL is present"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.1-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "GuzzleHttp\\Ring\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Michael Dowling",
-                    "email": "mtdowling@gmail.com",
-                    "homepage": "https://github.com/mtdowling"
-                }
-            ],
-            "description": "Provides a simple API and specification that abstracts away the details of HTTP into a single PHP function.",
-            "time": "2018-07-31T13:22:33+00:00"
-        },
-        {
-            "name": "guzzlehttp/streams",
-            "version": "3.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/guzzle/streams.git",
-                "reference": "47aaa48e27dae43d39fc1cea0ccf0d84ac1a2ba5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/streams/zipball/47aaa48e27dae43d39fc1cea0ccf0d84ac1a2ba5",
-                "reference": "47aaa48e27dae43d39fc1cea0ccf0d84ac1a2ba5",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
-            },
-            "require": {
-                "php": ">=5.4.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~4.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.0-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "GuzzleHttp\\Stream\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Michael Dowling",
-                    "email": "mtdowling@gmail.com",
-                    "homepage": "https://github.com/mtdowling"
-                }
-            ],
-            "description": "Provides a simple abstraction over streams of data",
-            "homepage": "http://guzzlephp.org/",
-            "keywords": [
-                "Guzzle",
-                "stream"
-            ],
-            "time": "2014-10-12T19:18:40+00:00"
-        },
-        {
             "name": "hyperf/amqp",
             "version": "dev-master",
             "source": {
@@ -1086,69 +907,6 @@
             "description": "A cache component for hyperf.",
             "keywords": [
                 "cache",
-                "hyperf",
-                "php"
-            ],
-            "time": "2019-10-22T01:35:48+00:00"
-        },
-        {
-            "name": "hyperf/circuit-breaker",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/hyperf/circuit-breaker.git",
-                "reference": "6a2d45e03afc3def45ed1066f6b680cf3f9c66c4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/hyperf/circuit-breaker/zipball/6a2d45e03afc3def45ed1066f6b680cf3f9c66c4",
-                "reference": "6a2d45e03afc3def45ed1066f6b680cf3f9c66c4",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
-            },
-            "require": {
-                "hyperf/utils": "~1.1.0",
-                "php": ">=7.2",
-                "psr/container": "^1.0"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "^2.9",
-                "hyperf/contract": "~1.1.0",
-                "hyperf/di": "~1.1.0",
-                "malukenho/docheader": "^0.1.6",
-                "mockery/mockery": "^1.0",
-                "phpunit/phpunit": "^7.0.0"
-            },
-            "suggest": {
-                "hyperf/contract": "Required to use annotations.",
-                "hyperf/di": "Required to use annotations."
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.1-dev"
-                },
-                "hyperf": {
-                    "config": "Hyperf\\CircuitBreaker\\ConfigProvider"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Hyperf\\CircuitBreaker\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "A circuit breaker component for hyperf.",
-            "keywords": [
-                "circuit breaker",
                 "hyperf",
                 "php"
             ],
@@ -1463,12 +1221,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf/db-connection.git",
-                "reference": "4865628a34c173da47b2aadba4c4e026f9b7547b"
+                "reference": "f38429e215c66e83d02cb6a6985204c10258f438"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hyperf/db-connection/zipball/4865628a34c173da47b2aadba4c4e026f9b7547b",
-                "reference": "4865628a34c173da47b2aadba4c4e026f9b7547b",
+                "url": "https://api.github.com/repos/hyperf/db-connection/zipball/f38429e215c66e83d02cb6a6985204c10258f438",
+                "reference": "f38429e215c66e83d02cb6a6985204c10258f438",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -1517,7 +1275,7 @@
                 "hyperf",
                 "php"
             ],
-            "time": "2019-11-01T04:42:29+00:00"
+            "time": "2019-11-09T08:12:58+00:00"
         },
         {
             "name": "hyperf/devtool",
@@ -1585,12 +1343,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf/di.git",
-                "reference": "2ea6390e57b460226173035d4ebc247dfcc61944"
+                "reference": "6e6088726aad91d27b41d4c986d3d1dd451be2db"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hyperf/di/zipball/2ea6390e57b460226173035d4ebc247dfcc61944",
-                "reference": "2ea6390e57b460226173035d4ebc247dfcc61944",
+                "url": "https://api.github.com/repos/hyperf/di/zipball/6e6088726aad91d27b41d4c986d3d1dd451be2db",
+                "reference": "6e6088726aad91d27b41d4c986d3d1dd451be2db",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -1651,7 +1409,7 @@
                 "php",
                 "swoole"
             ],
-            "time": "2019-10-29T11:44:35+00:00"
+            "time": "2019-11-09T03:31:08+00:00"
         },
         {
             "name": "hyperf/dispatcher",
@@ -1710,59 +1468,6 @@
                 "filter",
                 "hyperf",
                 "middleware",
-                "php",
-                "swoole"
-            ],
-            "time": "2019-10-22T01:35:48+00:00"
-        },
-        {
-            "name": "hyperf/elasticsearch",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/hyperf/elasticsearch.git",
-                "reference": "5406a7f352128f36fbf223cc34ad485e9ea90f30"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/hyperf/elasticsearch/zipball/5406a7f352128f36fbf223cc34ad485e9ea90f30",
-                "reference": "5406a7f352128f36fbf223cc34ad485e9ea90f30",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
-            },
-            "require": {
-                "elasticsearch/elasticsearch": "^6.1",
-                "hyperf/guzzle": "~1.1.0",
-                "php": ">=7.0"
-            },
-            "require-dev": {
-                "guzzlehttp/ringphp": "~1.0",
-                "phpunit/phpunit": "^5.7",
-                "swoft/swoole-ide-helper": "dev-master"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.1-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Hyperf\\Elasticsearch\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "Elasticsearch client for hyperf",
-            "keywords": [
-                "elasticsearch",
                 "php",
                 "swoole"
             ],
@@ -1836,12 +1541,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf/exception-handler.git",
-                "reference": "75edd69a220af34504b1596f0564f2b92c5e61c3"
+                "reference": "cf8ea962dc11bb6588b15ec77c72935530f7a895"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hyperf/exception-handler/zipball/75edd69a220af34504b1596f0564f2b92c5e61c3",
-                "reference": "75edd69a220af34504b1596f0564f2b92c5e61c3",
+                "url": "https://api.github.com/repos/hyperf/exception-handler/zipball/cf8ea962dc11bb6588b15ec77c72935530f7a895",
+                "reference": "cf8ea962dc11bb6588b15ec77c72935530f7a895",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -1888,7 +1593,7 @@
                 "php",
                 "swoole"
             ],
-            "time": "2019-10-22T01:35:48+00:00"
+            "time": "2019-11-11T01:45:50+00:00"
         },
         {
             "name": "hyperf/framework",
@@ -2021,7 +1726,7 @@
         },
         {
             "name": "hyperf/http-message",
-            "version": "dev-master",
+            "version": "v1.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf/http-message.git",
@@ -2203,73 +1908,17 @@
             "time": "2019-11-04T08:39:27+00:00"
         },
         {
-            "name": "hyperf/memory",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/hyperf/memory.git",
-                "reference": "b59ee60bbbc3b9fc1e0b32c9fae8579342991789"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/hyperf/memory/zipball/b59ee60bbbc3b9fc1e0b32c9fae8579342991789",
-                "reference": "b59ee60bbbc3b9fc1e0b32c9fae8579342991789",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
-            },
-            "require": {
-                "php": ">=7.2"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "^2.9",
-                "malukenho/docheader": "^0.1.6",
-                "mockery/mockery": "^1.0",
-                "phpunit/phpunit": "^7.0.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.1-dev"
-                },
-                "hyperf": {
-                    "config": "Hyperf\\Memory\\ConfigProvider"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Hyperf\\Memory\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "An independent component that use to operate and manage memory.",
-            "keywords": [
-                "hyperf",
-                "memory",
-                "php",
-                "swoole"
-            ],
-            "time": "2019-10-22T01:35:48+00:00"
-        },
-        {
             "name": "hyperf/model-cache",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf/model-cache.git",
-                "reference": "136a6add97c650726f185dc8ed9f81e9f4121fa9"
+                "reference": "0705371eee93cb031bc2cf86ee88e6e26a5577e7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hyperf/model-cache/zipball/136a6add97c650726f185dc8ed9f81e9f4121fa9",
-                "reference": "136a6add97c650726f185dc8ed9f81e9f4121fa9",
+                "url": "https://api.github.com/repos/hyperf/model-cache/zipball/0705371eee93cb031bc2cf86ee88e6e26a5577e7",
+                "reference": "0705371eee93cb031bc2cf86ee88e6e26a5577e7",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -2320,7 +1969,7 @@
                 "model-cache",
                 "php"
             ],
-            "time": "2019-10-22T01:35:48+00:00"
+            "time": "2019-11-13T06:43:42+00:00"
         },
         {
             "name": "hyperf/model-listener",
@@ -2387,7 +2036,7 @@
         },
         {
             "name": "hyperf/paginator",
-            "version": "dev-master",
+            "version": "v1.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf/paginator.git",
@@ -2769,12 +2418,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf/utils.git",
-                "reference": "a45a5ff33172e432755d5a7d8ec2ea740ec39c47"
+                "reference": "193734300d1f67598166a1c91393012fcf4148a0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hyperf/utils/zipball/a45a5ff33172e432755d5a7d8ec2ea740ec39c47",
-                "reference": "a45a5ff33172e432755d5a7d8ec2ea740ec39c47",
+                "url": "https://api.github.com/repos/hyperf/utils/zipball/193734300d1f67598166a1c91393012fcf4148a0",
+                "reference": "193734300d1f67598166a1c91393012fcf4148a0",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -2832,7 +2481,7 @@
                 "swoole",
                 "utils"
             ],
-            "time": "2019-11-05T08:17:46+00:00"
+            "time": "2019-11-10T17:50:33+00:00"
         },
         {
             "name": "hyperf/validation",
@@ -3173,16 +2822,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v4.2.5",
+            "version": "v4.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "b76bbc3c51f22c570648de48e8c2d941ed5e2cf2"
+                "reference": "9a9981c347c5c49d6dfe5cf826bb882b824080dc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/b76bbc3c51f22c570648de48e8c2d941ed5e2cf2",
-                "reference": "b76bbc3c51f22c570648de48e8c2d941ed5e2cf2",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/9a9981c347c5c49d6dfe5cf826bb882b824080dc",
+                "reference": "9a9981c347c5c49d6dfe5cf826bb882b824080dc",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -3196,7 +2845,7 @@
                 "php": ">=7.0"
             },
             "require-dev": {
-                "ircmaxell/php-yacc": "0.0.4",
+                "ircmaxell/php-yacc": "0.0.5",
                 "phpunit/phpunit": "^6.5 || ^7.0 || ^8.0"
             },
             "bin": [
@@ -3205,7 +2854,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.2-dev"
+                    "dev-master": "4.3-dev"
                 }
             },
             "autoload": {
@@ -3227,7 +2876,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2019-10-25T18:33:07+00:00"
+            "time": "2019-11-08T13:50:10+00:00"
         },
         {
             "name": "overtrue/socialite",
@@ -3290,16 +2939,16 @@
         },
         {
             "name": "overtrue/wechat",
-            "version": "4.2.7",
+            "version": "4.2.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/overtrue/wechat.git",
-                "reference": "8bf420d99f82eb956b575b33df4b22bf1eadb392"
+                "reference": "d8d68636d02d1c51d0edd7aaa854813f6747bf8d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/overtrue/wechat/zipball/8bf420d99f82eb956b575b33df4b22bf1eadb392",
-                "reference": "8bf420d99f82eb956b575b33df4b22bf1eadb392",
+                "url": "https://api.github.com/repos/overtrue/wechat/zipball/d8d68636d02d1c51d0edd7aaa854813f6747bf8d",
+                "reference": "d8d68636d02d1c51d0edd7aaa854813f6747bf8d",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -3358,7 +3007,7 @@
                 "weixin",
                 "weixin-sdk"
             ],
-            "time": "2019-10-26T23:47:02+00:00"
+            "time": "2019-11-08T10:32:21+00:00"
         },
         {
             "name": "php-amqplib/php-amqplib",
@@ -3484,16 +3133,16 @@
         },
         {
             "name": "phpoption/phpoption",
-            "version": "1.5.1",
+            "version": "1.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmittjoh/php-option.git",
-                "reference": "894e8f93890b79f29911cce497fe811fe9d931ba"
+                "reference": "2ba2586380f8d2b44ad1b9feb61c371020b27793"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/894e8f93890b79f29911cce497fe811fe9d931ba",
-                "reference": "894e8f93890b79f29911cce497fe811fe9d931ba",
+                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/2ba2586380f8d2b44ad1b9feb61c371020b27793",
+                "reference": "2ba2586380f8d2b44ad1b9feb61c371020b27793",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -3506,12 +3155,12 @@
                 "php": ">=5.3.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "4.7.*"
+                "phpunit/phpunit": "^4.7|^5.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.3-dev"
+                    "dev-master": "1.5-dev"
                 }
             },
             "autoload": {
@@ -3536,7 +3185,7 @@
                 "php",
                 "type"
             ],
-            "time": "2019-11-06T12:42:47+00:00"
+            "time": "2019-11-06T22:27:00+00:00"
         },
         {
             "name": "pimple/pimple",
@@ -4081,60 +3730,8 @@
             "time": "2019-03-08T08:55:37+00:00"
         },
         {
-            "name": "react/promise",
-            "version": "v2.7.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/reactphp/promise.git",
-                "reference": "31ffa96f8d2ed0341a57848cbb84d88b89dd664d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/reactphp/promise/zipball/31ffa96f8d2ed0341a57848cbb84d88b89dd664d",
-                "reference": "31ffa96f8d2ed0341a57848cbb84d88b89dd664d",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
-            },
-            "require": {
-                "php": ">=5.4.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~4.8"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "React\\Promise\\": "src/"
-                },
-                "files": [
-                    "src/functions_include.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Jan Sorgalla",
-                    "email": "jsorgalla@gmail.com"
-                }
-            ],
-            "description": "A lightweight implementation of CommonJS Promises/A for PHP",
-            "keywords": [
-                "promise",
-                "promises"
-            ],
-            "time": "2019-01-07T21:25:54+00:00"
-        },
-        {
             "name": "symfony/cache",
-            "version": "v4.3.6",
+            "version": "v4.3.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/cache.git",
@@ -4282,16 +3879,16 @@
         },
         {
             "name": "symfony/console",
-            "version": "v4.3.6",
+            "version": "v4.3.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "136c4bd62ea871d00843d1bc0316de4c4a84bb78"
+                "reference": "d2e39dbddae68560fa6be0c576da6ad4e945b90d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/136c4bd62ea871d00843d1bc0316de4c4a84bb78",
-                "reference": "136c4bd62ea871d00843d1bc0316de4c4a84bb78",
+                "url": "https://api.github.com/repos/symfony/console/zipball/d2e39dbddae68560fa6be0c576da6ad4e945b90d",
+                "reference": "d2e39dbddae68560fa6be0c576da6ad4e945b90d",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -4359,20 +3956,20 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2019-10-30T12:58:49+00:00"
+            "time": "2019-11-05T15:00:49+00:00"
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "v4.3.6",
+            "version": "v4.3.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/event-dispatcher.git",
-                "reference": "6229f58993e5a157f6096fc7145c0717d0be8807"
+                "reference": "0df002fd4f500392eabd243c2947061a50937287"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/6229f58993e5a157f6096fc7145c0717d0be8807",
-                "reference": "6229f58993e5a157f6096fc7145c0717d0be8807",
+                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/0df002fd4f500392eabd243c2947061a50937287",
+                "reference": "0df002fd4f500392eabd243c2947061a50937287",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -4435,7 +4032,7 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "https://symfony.com",
-            "time": "2019-10-01T16:40:32+00:00"
+            "time": "2019-11-03T09:04:05+00:00"
         },
         {
             "name": "symfony/event-dispatcher-contracts",
@@ -4503,7 +4100,7 @@
         },
         {
             "name": "symfony/finder",
-            "version": "v4.3.6",
+            "version": "v4.3.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
@@ -4558,16 +4155,16 @@
         },
         {
             "name": "symfony/http-foundation",
-            "version": "v4.3.6",
+            "version": "v4.3.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-foundation.git",
-                "reference": "38f63e471cda9d37ac06e76d14c5ea2ec5887051"
+                "reference": "514e5bbcbc783465c6fce5a7b2e28657f2e114b7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/38f63e471cda9d37ac06e76d14c5ea2ec5887051",
-                "reference": "38f63e471cda9d37ac06e76d14c5ea2ec5887051",
+                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/514e5bbcbc783465c6fce5a7b2e28657f2e114b7",
+                "reference": "514e5bbcbc783465c6fce5a7b2e28657f2e114b7",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -4615,11 +4212,11 @@
             ],
             "description": "Symfony HttpFoundation Component",
             "homepage": "https://symfony.com",
-            "time": "2019-10-30T12:58:49+00:00"
+            "time": "2019-11-05T14:48:09+00:00"
         },
         {
             "name": "symfony/mime",
-            "version": "v4.3.6",
+            "version": "v4.3.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/mime.git",
@@ -5077,16 +4674,16 @@
         },
         {
             "name": "symfony/service-contracts",
-            "version": "v1.1.7",
+            "version": "v1.1.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/service-contracts.git",
-                "reference": "ffcde9615dc5bb4825b9f6aed07716f1f57faae0"
+                "reference": "ffc7f5692092df31515df2a5ecf3b7302b3ddacf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/service-contracts/zipball/ffcde9615dc5bb4825b9f6aed07716f1f57faae0",
-                "reference": "ffcde9615dc5bb4825b9f6aed07716f1f57faae0",
+                "url": "https://api.github.com/repos/symfony/service-contracts/zipball/ffc7f5692092df31515df2a5ecf3b7302b3ddacf",
+                "reference": "ffc7f5692092df31515df2a5ecf3b7302b3ddacf",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -5137,20 +4734,20 @@
                 "interoperability",
                 "standards"
             ],
-            "time": "2019-09-17T11:12:18+00:00"
+            "time": "2019-10-14T12:27:06+00:00"
         },
         {
             "name": "symfony/translation",
-            "version": "v4.3.6",
+            "version": "v4.3.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/translation.git",
-                "reference": "a3aa590ce944afb3434d7a55f81b00927144d5ec"
+                "reference": "bbce239b35b0cd47bd75848b23e969f17dd970e7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/translation/zipball/a3aa590ce944afb3434d7a55f81b00927144d5ec",
-                "reference": "a3aa590ce944afb3434d7a55f81b00927144d5ec",
+                "url": "https://api.github.com/repos/symfony/translation/zipball/bbce239b35b0cd47bd75848b23e969f17dd970e7",
+                "reference": "bbce239b35b0cd47bd75848b23e969f17dd970e7",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -5219,7 +4816,7 @@
             ],
             "description": "Symfony Translation Component",
             "homepage": "https://symfony.com",
-            "time": "2019-10-30T12:53:54+00:00"
+            "time": "2019-11-06T23:21:49+00:00"
         },
         {
             "name": "symfony/translation-contracts",
@@ -5286,7 +4883,7 @@
         },
         {
             "name": "symfony/var-exporter",
-            "version": "v4.3.6",
+            "version": "v4.3.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-exporter.git",
@@ -8296,7 +7893,7 @@
         },
         {
             "name": "symfony/filesystem",
-            "version": "v4.3.6",
+            "version": "v4.3.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
@@ -8352,7 +7949,7 @@
         },
         {
             "name": "symfony/options-resolver",
-            "version": "v4.3.6",
+            "version": "v4.3.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/options-resolver.git",
@@ -8477,7 +8074,7 @@
         },
         {
             "name": "symfony/process",
-            "version": "v4.3.6",
+            "version": "v4.3.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
@@ -8532,16 +8129,16 @@
         },
         {
             "name": "symfony/stopwatch",
-            "version": "v4.3.6",
+            "version": "v4.3.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/stopwatch.git",
-                "reference": "1e4ff456bd625be5032fac9be4294e60442e9b71"
+                "reference": "e96c259de6abcd0cead71f0bf4d730d53ee464d0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/stopwatch/zipball/1e4ff456bd625be5032fac9be4294e60442e9b71",
-                "reference": "1e4ff456bd625be5032fac9be4294e60442e9b71",
+                "url": "https://api.github.com/repos/symfony/stopwatch/zipball/e96c259de6abcd0cead71f0bf4d730d53ee464d0",
+                "reference": "e96c259de6abcd0cead71f0bf4d730d53ee464d0",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -8584,7 +8181,7 @@
             ],
             "description": "Symfony Stopwatch Component",
             "homepage": "https://symfony.com",
-            "time": "2019-08-07T11:52:19+00:00"
+            "time": "2019-11-05T14:48:09+00:00"
         },
         {
             "name": "theseer/tokenizer",
@@ -8695,7 +8292,6 @@
         "hyperf/amqp": 20,
         "hyperf/async-queue": 20,
         "hyperf/cache": 20,
-        "hyperf/circuit-breaker": 20,
         "hyperf/command": 20,
         "hyperf/config": 20,
         "hyperf/constants": 20,
@@ -8705,17 +8301,13 @@
         "hyperf/devtool": 20,
         "hyperf/di": 20,
         "hyperf/dispatcher": 20,
-        "hyperf/elasticsearch": 20,
         "hyperf/event": 20,
         "hyperf/exception-handler": 20,
         "hyperf/framework": 20,
         "hyperf/guzzle": 20,
-        "hyperf/http-message": 20,
         "hyperf/http-server": 20,
         "hyperf/logger": 20,
-        "hyperf/memory": 20,
         "hyperf/model-cache": 20,
-        "hyperf/paginator": 20,
         "hyperf/pool": 20,
         "hyperf/process": 20,
         "hyperf/redis": 20,
